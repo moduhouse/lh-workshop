@@ -1,0 +1,41 @@
+나는 광명시 공시지가 데이터를 수집하고 검증하는 사무관이야. 데이터를 보기위해 데시보드와 지도 시각화를 간단하게 해줘
+
+현재 데이터를 가지고 대시보드를 기획해줘, 누가 어떤 문제 때문에 어떻게 바꾸고 싶은지 중점적으로 물어봐
+
+좋아. 병렬로 에이젠트 불러서 claude.md작성과 작업을 동시에 하게 해줘 
+
+Github CLI를 이용해서 연동까지 살거야. 회원가입했으니까 나머지 작업을 진행해줘. git과 gh설치 승인하고 gh auth login 내가 할께. 
+
+다시 gh auth login rr
+
+____ 제가 직접 로그인 플로우를 실행해서 코드를 보여드릴게요. 코드가 나오면 브라우저에서 입력해주시면 됩니다.
+
+아래 코드로 로그인해주세요.
+
+One-time code: 440D-4DB0
+
+https://github.com/login/device 접속 (이 코드를 밖에 있는 창에 복사 붙여넣기) -- 다시 로그인 
+코드 440D-4DB0 입력
+Authorize 클릭
+
+입력하시면 제가 완료 여부를 확인하겠습니다.
+
+로그인 완료됐습니다 (moduhouse 계정). 이제 lh-workshop 이름으로 private 저장소를 만들고, git 초기화 → 첫 커밋 → push까지 진행하겠습니다. 진행해도 될까요?
+
+"커밋하려면 git 사용자 정보가 필요한데, 제가 git config는 직접 변경하면 안 되는 규칙이 있어서 설정을 부탁드릴게요. 본인 터미널에서:
+
+```
+git config --global user.name "원하시는 이름"
+git config --global user.email "GitHub 가입 이메일"
+```
+
+설정하신 후 알려주시면 이어서 커밋·푸시 진행하겠습니다.
+
+That's just the earlier `gh auth login` background task notification (already confirmed complete — logged in as `moduhouse`). No new action needed there.
+
+Still waiting on you to set git identity:
+```
+git config --global user.name "원하시는 이름"
+git config --global user.email "GitHub 가입 이메일"
+```
+설정 완료하시면 알려주세요, 이어서 커밋·푸시 진행하겠습니다." 
