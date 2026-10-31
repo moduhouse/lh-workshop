@@ -111,6 +111,11 @@
   .table-scroll{max-height:460px; overflow:auto; border:1px solid var(--border); border-radius:8px;}
   .table-info{font-size:12px; color:var(--text-muted); margin-top:8px;}
 
+  .legend-row{display:flex; flex-wrap:wrap; gap:14px; font-size:12px; color:var(--text-secondary); margin-top:10px;}
+  .legend-item{display:flex; align-items:center; gap:6px;}
+  .legend-swatch{width:12px; height:12px; border-radius:3px; display:inline-block;}
+  .ndc3-badge{display:inline-block; padding:2px 8px; border-radius:999px; font-size:11px; font-weight:700;}
+
   footer{max-width:1280px; margin:0 auto; padding:0 24px 40px; font-size:12px; color:var(--text-muted);}
 </style>
 </head>
@@ -228,6 +233,34 @@
   </div>
 
   <div class="panel">
+    <h2>NDC 3.0 도시 기후대응 현황</h2>
+    <p class="note">출처: UN-Habitat 「NDC 3.0의 도시 관련 내용」 (2026) · 2026년 4월 중순까지 UNFCCC에 제출된 NDC 3.0 기준 · 등급은 국가 기후계획(NDC)의 도시 관련 내용 수준이며, 본 대시보드의 기후 지표와는 별개의 정성 평가입니다.</p>
+    <div class="kpi-grid" style="grid-template-columns:repeat(3,1fr); margin-bottom:16px;">
+      <div class="kpi"><div class="label">NDC 3.0 제출 완료</div><div class="value" id="ndc3KpiSubmitted">–</div><div class="sub">51개국 중 등급 A/B/C 보유</div></div>
+      <div class="kpi"><div class="label">NDC 3.0 미제출</div><div class="value" id="ndc3KpiNotSubmitted">–</div><div class="sub">보고서상 "No" (NDC 2.0 유지)</div></div>
+      <div class="kpi"><div class="label">보고서 데이터 없음</div><div class="value" id="ndc3KpiNoData">–</div><div class="sub">이번 보고서에 집계되지 않은 국가</div></div>
+    </div>
+    <div id="ndc3Map" style="height:420px;"></div>
+    <div class="legend-row">
+      <div class="legend-item"><span class="legend-swatch" style="background:#1baf7a;"></span>A/A+ (강력한 도시 관련 내용)</div>
+      <div class="legend-item"><span class="legend-swatch" style="background:#2a78d6;"></span>B/B+ (중간 수준)</div>
+      <div class="legend-item"><span class="legend-swatch" style="background:#eda100;"></span>C/C+ (낮은 수준)</div>
+      <div class="legend-item"><span class="legend-swatch" style="background:#c3c2b7;"></span>NDC 3.0 미제출</div>
+      <div class="legend-item"><span class="legend-swatch" style="background:#e1e0d9;"></span>보고서 데이터 없음</div>
+      <div class="legend-item">+ = 구현수단(재무·역량·거버넌스) 포함</div>
+    </div>
+    <div class="table-scroll" style="margin-top:14px; max-height:360px;"><table>
+      <thead><tr>
+        <th data-ndc3-sort="country">국가</th>
+        <th data-ndc3-sort="ndc2">NDC 2.0 (보고서)</th>
+        <th data-ndc3-sort="ndc3">NDC 3.0</th>
+        <th data-ndc3-sort="statusLabel">상태</th>
+      </tr></thead>
+      <tbody id="ndc3TableBody"></tbody>
+    </table></div>
+  </div>
+
+  <div class="panel">
     <h2>데이터 조회</h2>
     <p class="note">원자료를 직접 확인하고 필터링할 수 있습니다.</p>
     <div class="table-tabs">
@@ -238,6 +271,12 @@
       <select id="filterContinent"><option value="">전체 대륙</option></select>
       <select id="filterCountry"><option value="">전체 국가</option></select>
       <select id="filterYear"><option value="">전체 연도</option></select>
+      <select id="filterNdc3">
+        <option value="">NDC 3.0 전체</option>
+        <option value="submitted">제출 완료(A/B/C)</option>
+        <option value="notsubmitted">미제출(No)</option>
+        <option value="nodata">보고서 데이터 없음</option>
+      </select>
       <input type="text" id="filterSearch" placeholder="국가/지역 검색...">
     </div>
     <div class="table-scroll"><table>
@@ -250,7 +289,7 @@
 </main>
 
 <footer>
-  데이터 출처: regression base v9.xlsx (내부 EDAT 패널 데이터) · 지표는 지역(주/도) 단순평균으로 국가 단위 집계됨 · 생성일: <span id="genDate"></span>
+  데이터 출처: regression base v9.xlsx (내부 EDAT 패널 데이터), UN-Habitat 「NDC 3.0의 도시 관련 내용」(2026) · 지표는 지역(주/도) 단순평균으로 국가 단위 집계됨 · 생성일: <span id="genDate"></span>
 </footer>
 
 <script>
@@ -346,6 +385,41 @@ function recomputeAdaptScores(){
 }
 recomputeAdaptScores();
 if(!EDAT_DATA.cy_cols.includes('ADAPT_SCORE')) EDAT_DATA.cy_cols.push('ADAPT_SCORE');
+
+// ---- NDC 3.0 도시 기후대응 현황 (UN-Habitat, 2026) ----
+// 출처: UN-Habitat 「NDC 3.0의 도시 관련 내용」(2026년 4월 중순까지 UNFCCC 제출 기준)
+// 키는 ISO3 국가코드. ndc2/ndc3 값은 보고서의 도시 관련 내용 등급(A+/A/B+/B/C+/C) 또는 'No'(미제출).
+// 이 목록에 없는 국가는 보고서 분석 대상에 포함되지 않음("보고서 데이터 없음").
+const NDC3_DATA = {
+  ARE:{ndc2:'A+',ndc3:'A+'}, ARM:{ndc2:'No',ndc3:'A+'}, AUT:{ndc2:'No',ndc3:'B+'},
+  BGR:{ndc2:'No',ndc3:'B+'}, BWA:{ndc2:'No',ndc3:'B+'}, CHE:{ndc2:'No',ndc3:'No'},
+  DEU:{ndc2:'No',ndc3:'B+'}, DNK:{ndc2:'No',ndc3:'B+'}, FIN:{ndc2:'No',ndc3:'B+'},
+  GAB:{ndc2:'A+',ndc3:'A+'}, GRC:{ndc2:'No',ndc3:'B+'}, HUN:{ndc2:'No',ndc3:'B+'},
+  IDN:{ndc2:'B+',ndc3:'B+'}, IRL:{ndc2:'No',ndc3:'B+'}, IRQ:{ndc2:'A',ndc3:'A+'},
+  ITA:{ndc2:'No',ndc3:'B+'}, JOR:{ndc2:'B+',ndc3:'C+'}, KGZ:{ndc2:'B',ndc3:'A+'},
+  LBR:{ndc2:'C+',ndc3:'A+'}, LTU:{ndc2:'No',ndc3:'B+'}, LUX:{ndc2:'No',ndc3:'B+'},
+  LVA:{ndc2:'No',ndc3:'B+'}, MAR:{ndc2:'B+',ndc3:'A+'}, MDA:{ndc2:'A+',ndc3:'A+'},
+  MRT:{ndc2:'A',ndc3:'A+'}, MYS:{ndc2:'A',ndc3:'B'}, PAK:{ndc2:'A+',ndc3:'A+'},
+  QAT:{ndc2:'C',ndc3:'A+'}, ROU:{ndc2:'No',ndc3:'B+'}, SRB:{ndc2:'No',ndc3:'C'},
+  SVN:{ndc2:'No',ndc3:'B+'}, SWE:{ndc2:'No',ndc3:'B+'}, TUR:{ndc2:'A+',ndc3:'C+'},
+  UKR:{ndc2:'C',ndc3:'C'}, ZWE:{ndc2:'B+',ndc3:'B+'}
+};
+const NDC3_TIER_COLOR = {A:'#1baf7a', B:'#2a78d6', C:'#eda100', notsubmitted:'#c3c2b7', nodata:'#e1e0d9'};
+const NDC3_TIER_NUM = {nodata:-1, notsubmitted:0, C:1, B:2, A:3};
+function ndc3Info(code){
+  const d = NDC3_DATA[code];
+  if(!d) return {ndc2:null, ndc3:null, tier:'nodata', statusLabel:'보고서 데이터 없음'};
+  if(d.ndc3 === 'No') return {ndc2:d.ndc2, ndc3:'No', tier:'notsubmitted', statusLabel:'NDC 3.0 미제출'};
+  const tier = d.ndc3.replace('+','');
+  return {ndc2:d.ndc2, ndc3:d.ndc3, tier, statusLabel:'제출 완료 (' + d.ndc3 + ')'};
+}
+CY.forEach(r=>{
+  const info = ndc3Info(r.code);
+  r.ndc3_grade = info.ndc3;
+  r.ndc3_tier = info.tier;
+  r.ndc3_status = info.statusLabel;
+});
+if(!EDAT_DATA.cy_cols.includes('ndc3_grade')) EDAT_DATA.cy_cols.push('ndc3_grade');
 
 // ---- 범용 표준화(z-score) 헬퍼 (상관관계/비교/이상치 탐지에서 공용 사용) ----
 function computeStats(ind){
@@ -703,6 +777,75 @@ function renderCompare(){
 }
 cmpSelect.addEventListener('change', renderCompare);
 
+// ---- NDC 3.0 도시 기후대응 현황 ----
+function renderNdc3Section(){
+  const latest = CY.filter(r => r.year === YEARS[YEARS.length-1]);
+  const submitted = latest.filter(r => r.ndc3_grade && r.ndc3_grade !== 'No').length;
+  const notSubmitted = latest.filter(r => r.ndc3_grade === 'No').length;
+  const noData = latest.filter(r => r.ndc3_grade == null).length;
+  document.getElementById('ndc3KpiSubmitted').textContent = submitted + '개국';
+  document.getElementById('ndc3KpiNotSubmitted').textContent = notSubmitted + '개국';
+  document.getElementById('ndc3KpiNoData').textContent = noData + '개국';
+
+  const locations = latest.map(r=>r.code);
+  const z = latest.map(r=>NDC3_TIER_NUM[r.ndc3_tier]);
+  const text = latest.map(r=>{
+    if(r.ndc3_tier==='nodata') return r.country + '<br>보고서 데이터 없음';
+    if(r.ndc3_tier==='notsubmitted') return r.country + '<br>NDC 3.0 미제출 (NDC 2.0 상태 유지)';
+    return r.country + '<br>NDC 3.0: ' + r.ndc3_grade;
+  });
+  const data = [{
+    type:'choropleth', locationmode:'ISO-3', locations, z, text, hoverinfo:'text',
+    zmin:-1, zmax:3,
+    colorscale:[
+      [0,NDC3_TIER_COLOR.nodata],[0.125,NDC3_TIER_COLOR.nodata],
+      [0.125,NDC3_TIER_COLOR.notsubmitted],[0.375,NDC3_TIER_COLOR.notsubmitted],
+      [0.375,NDC3_TIER_COLOR.C],[0.625,NDC3_TIER_COLOR.C],
+      [0.625,NDC3_TIER_COLOR.B],[0.875,NDC3_TIER_COLOR.B],
+      [0.875,NDC3_TIER_COLOR.A],[1,NDC3_TIER_COLOR.A]
+    ],
+    showscale:false,
+    marker:{line:{color:cssVar('--border')||'#ccc', width:0.5}}
+  }];
+  const layout = {
+    margin:{t:0,b:0,l:0,r:0},
+    geo:{showframe:false, showcoastlines:false, projection:{type:'natural earth'}, bgcolor:'rgba(0,0,0,0)', lakecolor:'rgba(0,0,0,0)', landcolor: cssVar('--grid')||'#eee'},
+    paper_bgcolor:'rgba(0,0,0,0)',
+    font:{color: cssVar('--text-secondary')||'#555', family:'system-ui,sans-serif'}
+  };
+  Plotly.react('ndc3Map', data, layout, {displayModeBar:false, responsive:true});
+
+  let ndc3SortState = null;
+  function draw(){
+    let rows = latest.map(r=>({country:r.country, ndc2:r.ndc3_grade!=null?(NDC3_DATA[r.code]?NDC3_DATA[r.code].ndc2:'–'):'–', ndc3:r.ndc3_grade, statusLabel:r.ndc3_status, tier:r.ndc3_tier}));
+    if(ndc3SortState){
+      const {col, dir} = ndc3SortState;
+      rows = rows.slice().sort((a,b)=>{
+        let av=a[col]==null?'':a[col], bv=b[col]==null?'':b[col];
+        return dir*String(av).localeCompare(String(bv));
+      });
+    } else {
+      rows.sort((a,b)=> (NDC3_TIER_NUM[b.tier]-NDC3_TIER_NUM[a.tier]) || a.country.localeCompare(b.country));
+    }
+    const body = document.getElementById('ndc3TableBody');
+    body.innerHTML = rows.map(r=>{
+      const color = NDC3_TIER_COLOR[r.tier];
+      const badgeColor = (r.tier==='nodata'||r.tier==='notsubmitted') ? 'var(--text-secondary)' : '#fff';
+      return `<tr><td>${r.country}</td><td>${r.ndc2==null?'–':r.ndc2}</td><td>${r.ndc3==null?'–':r.ndc3}</td>` +
+        `<td><span class="ndc3-badge" style="background:${color};color:${badgeColor};">${r.statusLabel}</span></td></tr>`;
+    }).join('');
+  }
+  document.querySelectorAll('[data-ndc3-sort]').forEach(th=>{
+    th.style.cursor = 'pointer';
+    th.addEventListener('click', ()=>{
+      const col = th.dataset.ndc3Sort;
+      ndc3SortState = (ndc3SortState && ndc3SortState.col===col) ? {col, dir:-ndc3SortState.dir} : {col, dir:1};
+      draw();
+    });
+  });
+  draw();
+}
+
 // ---- Table ----
 let activeTab = 'country';
 const tabBtns = document.querySelectorAll('.tab-btn');
@@ -714,13 +857,14 @@ tabBtns.forEach(b=>b.addEventListener('click', ()=>{
 const filterContinent = document.getElementById('filterContinent');
 const filterCountry = document.getElementById('filterCountry');
 const filterYear = document.getElementById('filterYear');
+const filterNdc3 = document.getElementById('filterNdc3');
 const filterSearch = document.getElementById('filterSearch');
 CONTINENTS.forEach(c=>{ const o=document.createElement('option'); o.value=c; o.textContent=c; filterContinent.appendChild(o); });
 COUNTRIES.forEach(c=>{ const o=document.createElement('option'); o.value=c; o.textContent=c; filterCountry.appendChild(o); });
 YEARS.forEach(y=>{ const o=document.createElement('option'); o.value=y; o.textContent=y; filterYear.appendChild(o); });
-[filterContinent, filterCountry, filterYear, filterSearch].forEach(el=>el.addEventListener('input', renderTable));
+[filterContinent, filterCountry, filterYear, filterNdc3, filterSearch].forEach(el=>el.addEventListener('input', renderTable));
 
-const COL_LABELS = {country:'국가', continent:'대륙', code:'코드', province:'지역(주/도)', year:'연도'};
+const COL_LABELS = {country:'국가', continent:'대륙', code:'코드', province:'지역(주/도)', year:'연도', ndc3_grade:'NDC 3.0 등급'};
 
 let sortState = null;
 function renderTable(){
@@ -728,10 +872,16 @@ function renderTable(){
   let data = activeTab==='country' ? CY : PV;
 
   const cont = filterContinent.value, country = filterCountry.value, year = filterYear.value, q = filterSearch.value.trim().toLowerCase();
+  const ndc3f = activeTab==='country' ? filterNdc3.value : '';
   data = data.filter(r=>{
     if(cont && r.continent!==cont) return false;
     if(country && r.country!==country) return false;
     if(year && String(r.year)!==year) return false;
+    if(ndc3f){
+      if(ndc3f==='submitted' && !(r.ndc3_grade && r.ndc3_grade!=='No')) return false;
+      if(ndc3f==='notsubmitted' && r.ndc3_grade!=='No') return false;
+      if(ndc3f==='nodata' && r.ndc3_grade!=null) return false;
+    }
     if(q && !(r.country.toLowerCase().includes(q) || (r.province||'').toLowerCase().includes(q))) return false;
     return true;
   });
@@ -778,6 +928,7 @@ document.getElementById('genDate').textContent = new Date().toLocaleDateString('
 renderAll();
 renderTable();
 renderCorrHeatmap();
+renderNdc3Section();
 </script>
 </body>
 </html>
