@@ -392,7 +392,9 @@ if(!EDAT_DATA.cy_cols.includes('ADAPT_SCORE')) EDAT_DATA.cy_cols.push('ADAPT_SCO
 // 이 목록에 없는 국가는 보고서 분석 대상에 포함되지 않음("보고서 데이터 없음").
 const NDC3_DATA = {
   ARE:{ndc2:'A+',ndc3:'A+'}, ARM:{ndc2:'No',ndc3:'A+'}, AUT:{ndc2:'No',ndc3:'B+'},
-  BGR:{ndc2:'No',ndc3:'B+'}, BWA:{ndc2:'No',ndc3:'B+'}, CHE:{ndc2:'No',ndc3:'No'},
+  BGR:{ndc2:'No',ndc3:'B+'}, BWA:{ndc2:'No',ndc3:'B+'},
+  CHE:{ndc2:'No', ndc3:'No', submitted:true,
+    note:'원문 "Switzerland’s second NDC 2031–2035"(연방 공식 제출본, 참고자료 폴더)을 직접 검토함. 국가 단위 감축목표(2035년까지 1990년 대비 −65%)와 부문별(건물·수송·산업·농업) 목표만 다루며, 도시/city를 별도 프레임으로 다루는 기준선·과제·대응·구현수단은 없음(4.d.ii "도시계획" 항목도 해당 없음으로 명시). UN-Habitat의 "No"(도시 관련 내용 없음) 평가와 일치 — 즉 NDC 자체는 제출됐으나 도시 관련 내용이 없다는 뜻이며, "미제출"과는 다름.'},
   DEU:{ndc2:'No',ndc3:'B+'}, DNK:{ndc2:'No',ndc3:'B+'}, FIN:{ndc2:'No',ndc3:'B+'},
   GAB:{ndc2:'A+',ndc3:'A+'}, GRC:{ndc2:'No',ndc3:'B+'}, HUN:{ndc2:'No',ndc3:'B+'},
   IDN:{ndc2:'B+',ndc3:'B+'}, IRL:{ndc2:'No',ndc3:'B+'}, IRQ:{ndc2:'A',ndc3:'A+'},
@@ -408,16 +410,20 @@ const NDC3_TIER_COLOR = {A:'#1baf7a', B:'#2a78d6', C:'#eda100', notsubmitted:'#c
 const NDC3_TIER_NUM = {nodata:-1, notsubmitted:0, C:1, B:2, A:3};
 function ndc3Info(code){
   const d = NDC3_DATA[code];
-  if(!d) return {ndc2:null, ndc3:null, tier:'nodata', statusLabel:'보고서 데이터 없음'};
-  if(d.ndc3 === 'No') return {ndc2:d.ndc2, ndc3:'No', tier:'notsubmitted', statusLabel:'NDC 3.0 미제출'};
+  if(!d) return {ndc2:null, ndc3:null, tier:'nodata', statusLabel:'보고서 데이터 없음', note:null};
+  if(d.ndc3 === 'No'){
+    const statusLabel = d.submitted ? 'NDC 3.0 제출함 (도시 관련 내용 없음)' : 'NDC 3.0 미제출';
+    return {ndc2:d.ndc2, ndc3:'No', tier:'notsubmitted', statusLabel, note:d.note||null};
+  }
   const tier = d.ndc3.replace('+','');
-  return {ndc2:d.ndc2, ndc3:d.ndc3, tier, statusLabel:'제출 완료 (' + d.ndc3 + ')'};
+  return {ndc2:d.ndc2, ndc3:d.ndc3, tier, statusLabel:'제출 완료 (' + d.ndc3 + ')', note:d.note||null};
 }
 CY.forEach(r=>{
   const info = ndc3Info(r.code);
   r.ndc3_grade = info.ndc3;
   r.ndc3_tier = info.tier;
   r.ndc3_status = info.statusLabel;
+  r.ndc3_note = info.note;
 });
 if(!EDAT_DATA.cy_cols.includes('ndc3_grade')) EDAT_DATA.cy_cols.push('ndc3_grade');
 
@@ -789,11 +795,7 @@ function renderNdc3Section(){
 
   const locations = latest.map(r=>r.code);
   const z = latest.map(r=>NDC3_TIER_NUM[r.ndc3_tier]);
-  const text = latest.map(r=>{
-    if(r.ndc3_tier==='nodata') return r.country + '<br>보고서 데이터 없음';
-    if(r.ndc3_tier==='notsubmitted') return r.country + '<br>NDC 3.0 미제출 (NDC 2.0 상태 유지)';
-    return r.country + '<br>NDC 3.0: ' + r.ndc3_grade;
-  });
+  const text = latest.map(r=> r.country + '<br>' + r.ndc3_status + (r.ndc3_note ? ' *' : ''));
   const data = [{
     type:'choropleth', locationmode:'ISO-3', locations, z, text, hoverinfo:'text',
     zmin:-1, zmax:3,
@@ -817,7 +819,7 @@ function renderNdc3Section(){
 
   let ndc3SortState = null;
   function draw(){
-    let rows = latest.map(r=>({country:r.country, ndc2:r.ndc3_grade!=null?(NDC3_DATA[r.code]?NDC3_DATA[r.code].ndc2:'–'):'–', ndc3:r.ndc3_grade, statusLabel:r.ndc3_status, tier:r.ndc3_tier}));
+    let rows = latest.map(r=>({country:r.country, ndc2:r.ndc3_grade!=null?(NDC3_DATA[r.code]?NDC3_DATA[r.code].ndc2:'–'):'–', ndc3:r.ndc3_grade, statusLabel:r.ndc3_status, tier:r.ndc3_tier, note:r.ndc3_note}));
     if(ndc3SortState){
       const {col, dir} = ndc3SortState;
       rows = rows.slice().sort((a,b)=>{
@@ -831,9 +833,24 @@ function renderNdc3Section(){
     body.innerHTML = rows.map(r=>{
       const color = NDC3_TIER_COLOR[r.tier];
       const badgeColor = (r.tier==='nodata'||r.tier==='notsubmitted') ? 'var(--text-secondary)' : '#fff';
-      return `<tr><td>${r.country}</td><td>${r.ndc2==null?'–':r.ndc2}</td><td>${r.ndc3==null?'–':r.ndc3}</td>` +
+      const mark = r.note ? ' <span title="'+r.note.replace(/"/g,'&quot;')+'" style="cursor:help; color:var(--series-1); font-weight:700;">*</span>' : '';
+      return `<tr><td>${r.country}${mark}</td><td>${r.ndc2==null?'–':r.ndc2}</td><td>${r.ndc3==null?'–':r.ndc3}</td>` +
         `<td><span class="ndc3-badge" style="background:${color};color:${badgeColor};">${r.statusLabel}</span></td></tr>`;
     }).join('');
+    const notedRows = rows.filter(r=>r.note);
+    let footEl = document.getElementById('ndc3NoteFoot');
+    if(notedRows.length){
+      if(!footEl){
+        footEl = document.createElement('p');
+        footEl.id = 'ndc3NoteFoot';
+        footEl.className = 'note';
+        footEl.style.marginTop = '10px';
+        document.getElementById('ndc3TableBody').closest('.table-scroll').after(footEl);
+      }
+      footEl.innerHTML = notedRows.map(r=>`<b>* ${r.country}</b>: ${r.note}`).join('<br>');
+    } else if(footEl){
+      footEl.remove();
+    }
   }
   document.querySelectorAll('[data-ndc3-sort]').forEach(th=>{
     th.style.cursor = 'pointer';
