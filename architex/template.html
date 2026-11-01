@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>architex — 기후변화·재난 데이터 저널리즘</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1: #fcfcfb;
+    --page: #f9f9f7;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted: #898781;
+    --border: #e1e0d9;
+    --border-strong: rgba(11,11,11,0.10);
+    --series-1: #2a78d6;
+    --series-2: #eb6834;
+    --series-3: #1baf7a;
+    --good: #0ca30c;
+    --critical: #d03b3b;
+    --card-shadow: 0 1px 2px rgba(11,11,11,0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --surface-1: #1a1a19;
+      --page: #0d0d0d;
+      --text-primary: #f0efec;
+      --text-secondary: #c3c2b7;
+      --text-muted: #898781;
+      --border: #2c2c2a;
+      --border-strong: rgba(255,255,255,0.10);
+      --series-1: #3987e5;
+      --series-2: #d95926;
+      --series-3: #199e70;
+      --good: #0ca30c;
+      --critical: #e66767;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface-1: #1a1a19;
+    --page: #0d0d0d;
+    --text-primary: #f0efec;
+    --text-secondary: #c3c2b7;
+    --text-muted: #898781;
+    --border: #2c2c2a;
+    --border-strong: rgba(255,255,255,0.10);
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-3: #199e70;
+    --good: #0ca30c;
+    --critical: #e66767;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px 64px; }
+  header.masthead {
+    border-bottom: 3px solid var(--text-primary);
+    padding: 24px 16px 16px;
+    margin-bottom: 24px;
+  }
+  .masthead-row { max-width: 1120px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 8px; }
+  .logo { font-size: 32px; font-weight: 800; letter-spacing: -0.5px; }
+  .tagline { color: var(--text-secondary); font-size: 14px; margin-top: 2px; }
+  .meta-row { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--text-muted); }
+  #theme-toggle {
+    border: 1px solid var(--border-strong);
+    background: var(--surface-1);
+    color: var(--text-primary);
+    border-radius: 6px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .stat-card {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    box-shadow: var(--card-shadow);
+  }
+  .stat-card .value { font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .stat-card .label { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+  section { margin-bottom: 32px; }
+  h2.section-title { font-size: 16px; font-weight: 700; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+  h2.section-title::before { content: ""; width: 4px; height: 16px; background: var(--series-1); border-radius: 2px; display: inline-block; }
+  #map { height: 380px; border-radius: 10px; border: 1px solid var(--border); overflow: hidden; }
+  .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 720px) { .chart-grid { grid-template-columns: 1fr; } }
+  .chart-card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 16px; box-shadow: var(--card-shadow); }
+  .chart-card canvas { max-height: 220px; }
+  .filter-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .chip {
+    border: 1px solid var(--border-strong);
+    background: var(--surface-1);
+    color: var(--text-secondary);
+    border-radius: 999px;
+    padding: 5px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .chip[data-active="true"] {
+    background: var(--text-primary);
+    color: var(--page);
+    border-color: var(--text-primary);
+  }
+  .article-list { display: flex; flex-direction: column; gap: 12px; }
+  .article-card {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    box-shadow: var(--card-shadow);
+  }
+  .article-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+  .badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  .badge-type {
+    font-size: 11px;
+    border: 1px solid var(--border-strong);
+    color: var(--text-secondary);
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .article-date { font-size: 12px; color: var(--text-muted); margin-left: auto; font-variant-numeric: tabular-nums; }
+  .article-title { font-size: 16px; font-weight: 700; margin: 4px 0 6px; }
+  .article-title a { color: inherit; text-decoration: none; }
+  .article-title a:hover { text-decoration: underline; }
+  .article-summary { font-size: 14px; color: var(--text-secondary); margin-bottom: 8px; }
+  .article-footer { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--text-muted); flex-wrap: wrap; gap: 6px; }
+  .confidence-note { font-size: 12px; color: var(--text-muted); font-style: italic; margin-top: 6px; border-top: 1px dashed var(--border); padding-top: 6px; }
+  .empty-state { color: var(--text-muted); font-size: 14px; padding: 24px 0; text-align: center; }
+  footer { border-top: 1px solid var(--border); padding-top: 16px; font-size: 12px; color: var(--text-muted); }
+  footer p { margin: 4px 0; }
+  .leaflet-popup-content { font-size: 13px; }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-row">
+    <div>
+      <div class="logo">ARCHITEX</div>
+      <div class="tagline">기후변화·재난 데이터 저널리즘 — 매일 21:00(KST) 자동 수집·갱신</div>
+    </div>
+    <div class="meta-row">
+      <span id="last-updated"></span>
+      <button id="theme-toggle" type="button">다크모드</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section>
+    <div class="stat-row" id="stat-row"></div>
+  </section>
+
+  <section>
+    <h2 class="section-title">오늘의 이슈 지도</h2>
+    <div id="map"></div>
+  </section>
+
+  <section>
+    <h2 class="section-title">수집 현황</h2>
+    <div class="chart-grid">
+      <div class="chart-card"><canvas id="topic-chart"></canvas></div>
+      <div class="chart-card"><canvas id="trend-chart"></canvas></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">전체 기사·논문·데이터</h2>
+    <div class="filter-row" id="topic-filters"></div>
+    <div class="filter-row" id="type-filters"></div>
+    <div class="article-list" id="article-list"></div>
+  </section>
+
+  <footer>
+    <p><strong>architex</strong>는 기후변화·재난 데이터를 수집·검증하는 실무자가 운영하는 데이터 저널리즘 프로젝트입니다. 매일 오후 9시(KST) 웹 검색 기반으로 신규 논문·뉴스·데이터 갱신 소식을 자동 수집해 누적합니다.</p>
+    <p>Google Scholar는 자동 크롤링을 차단하므로, 논문 수집은 일반 웹 검색 결과를 바탕으로 합니다 — 특정 저널의 전수 조사가 아닌 표본적 수집이며, 출처가 불확실한 항목은 "확인 필요" 메모와 함께 표시합니다.</p>
+    <p>지도의 위치는 사건·기관이 위치한 지역의 근사 좌표이며, 필지/시설 단위의 정밀 좌표가 아닙니다.</p>
+  </footer>
+</div>
+
+<script>
+const BUNDLE = /*__DATA__*/{"last_updated":"","items":[]}/*__DATA_END__*/;
+
+const TOPIC_META = {
+  adaptation: { label: '적응·회복력', color: 'var(--series-1)', hex: '#2a78d6' },
+  disaster: { label: '재해·재난위험', color: 'var(--series-2)', hex: '#eb6834' },
+  climate_general: { label: '기후변화 전반', color: 'var(--series-3)', hex: '#1baf7a' }
+};
+const TYPE_META = {
+  news: { label: '뉴스', icon: '📰' },
+  paper: { label: '논문/연구', icon: '📄' },
+  data_update: { label: '데이터 업데이트', icon: '📊' }
+};
+
+const state = { topic: 'all', type: 'all' };
+let map, markerLayer;
+
+function fmtDate(d) {
+  if (!d) return '날짜 미상';
+  return d;
+}
+
+function applyStoredTheme() {
+  try {
+    const saved = localStorage.getItem('architex-theme');
+    if (saved === 'dark' || saved === 'light') {
+      document.documentElement.setAttribute('data-theme', saved);
+      document.getElementById('theme-toggle').textContent = saved === 'dark' ? '라이트모드' : '다크모드';
+    }
+  } catch (e) {}
+}
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute('data-theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const nowDark = current ? current === 'dark' : prefersDark;
+  const next = nowDark ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  document.getElementById('theme-toggle').textContent = next === 'dark' ? '라이트모드' : '다크모드';
+  try { localStorage.setItem('architex-theme', next); } catch (e) {}
+}
+
+function renderHeader() {
+  const dt = new Date(BUNDLE.last_updated);
+  const text = isNaN(dt) ? BUNDLE.last_updated : dt.toLocaleString('ko-KR', { dateStyle: 'medium', timeStyle: 'short' });
+  document.getElementById('last-updated').textContent = '마지막 갱신: ' + text;
+}
+
+function renderStats() {
+  const items = BUNDLE.items;
+  const today = items.length ? items[0].collected_at : null;
+  const todayCount = items.filter(i => i.collected_at === today).length;
+  const counts = { paper: 0, news: 0, data_update: 0 };
+  items.forEach(i => { counts[i.type] = (counts[i.type] || 0) + 1; });
+  const regions = new Set(items.map(i => i.region).filter(Boolean));
+
+  const cards = [
+    { value: items.length, label: '누적 수집 항목' },
+    { value: todayCount, label: '오늘 신규 항목' },
+    { value: counts.news || 0, label: '뉴스' },
+    { value: counts.paper || 0, label: '논문/연구' },
+    { value: counts.data_update || 0, label: '데이터 업데이트' },
+    { value: regions.size, label: '관련 지역 수' }
+  ];
+  document.getElementById('stat-row').innerHTML = cards.map(c =>
+    `<div class="stat-card"><div class="value">${c.value}</div><div class="label">${c.label}</div></div>`
+  ).join('');
+}
+
+function renderFilters() {
+  const topicRow = document.getElementById('topic-filters');
+  const topicChips = [{ key: 'all', label: '전체 주제' }].concat(
+    Object.keys(TOPIC_META).map(k => ({ key: k, label: TOPIC_META[k].label }))
+  );
+  topicRow.innerHTML = topicChips.map(c =>
+    `<button class="chip" data-kind="topic" data-key="${c.key}" data-active="${state.topic === c.key}">${c.label}</button>`
+  ).join('');
+
+  const typeRow = document.getElementById('type-filters');
+  const typeChips = [{ key: 'all', label: '전체 유형' }].concat(
+    Object.keys(TYPE_META).map(k => ({ key: k, label: TYPE_META[k].icon + ' ' + TYPE_META[k].label }))
+  );
+  typeRow.innerHTML = typeChips.map(c =>
+    `<button class="chip" data-kind="type" data-key="${c.key}" data-active="${state.type === c.key}">${c.label}</button>`
+  ).join('');
+
+  document.querySelectorAll('.chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state[btn.dataset.kind] = btn.dataset.key;
+      renderFilters();
+      renderList();
+    });
+  });
+}
+
+function filteredItems() {
+  return BUNDLE.items.filter(i =>
+    (state.topic === 'all' || i.topics.includes(state.topic)) &&
+    (state.type === 'all' || i.type === state.type)
+  );
+}
+
+function renderList() {
+  const items = filteredItems();
+  const container = document.getElementById('article-list');
+  if (!items.length) {
+    container.innerHTML = '<div class="empty-state">조건에 맞는 항목이 없습니다.</div>';
+    return;
+  }
+  container.innerHTML = items.map(i => {
+    const topicBadges = i.topics.map(t =>
+      `<span class="badge" style="background:${TOPIC_META[t] ? TOPIC_META[t].hex : '#888'}">${TOPIC_META[t] ? TOPIC_META[t].label : t}</span>`
+    ).join('');
+    const typeMeta = TYPE_META[i.type] || { label: i.type, icon: '•' };
+    return `
+      <article class="article-card">
+        <div class="article-top">
+          <span class="badge-type">${typeMeta.icon} ${typeMeta.label}</span>
+          ${topicBadges}
+          <span class="article-date">수집 ${fmtDate(i.collected_at)} · 발행 ${fmtDate(i.published_date)}</span>
+        </div>
+        <div class="article-title"><a href="${i.url}" target="_blank" rel="noopener">${i.title_ko}</a></div>
+        <div class="article-summary">${i.summary_ko}</div>
+        <div class="article-footer">
+          <span>${i.source}${i.region ? ' · ' + i.region : ''}</span>
+        </div>
+        ${i.confidence_note ? `<div class="confidence-note">※ ${i.confidence_note}</div>` : ''}
+      </article>
+    `;
+  }).join('');
+}
+
+function renderMap() {
+  map = L.map('map', { scrollWheelZoom: false }).setView([20, 10], 2);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors',
+    maxZoom: 18
+  }).addTo(map);
+
+  const grouped = {};
+  BUNDLE.items.forEach(i => {
+    if (i.lat == null || i.lon == null) return;
+    const key = i.lat + ',' + i.lon;
+    if (!grouped[key]) grouped[key] = { lat: i.lat, lon: i.lon, region: i.region, items: [] };
+    grouped[key].items.push(i);
+  });
+
+  Object.values(grouped).forEach(g => {
+    const mainTopic = g.items[0].topics[0];
+    const color = TOPIC_META[mainTopic] ? TOPIC_META[mainTopic].hex : '#888';
+    const radius = 7 + Math.min(g.items.length, 6) * 2;
+    const marker = L.circleMarker([g.lat, g.lon], {
+      radius, color, weight: 2, fillColor: color, fillOpacity: 0.45
+    }).addTo(map);
+    const list = g.items.map(i => `<div style="margin-bottom:4px"><a href="${i.url}" target="_blank" rel="noopener">${i.title_ko}</a></div>`).join('');
+    marker.bindPopup(`<strong>${g.region}</strong><br>${list}`);
+  });
+}
+
+function renderCharts() {
+  const topicCounts = {};
+  Object.keys(TOPIC_META).forEach(k => topicCounts[k] = 0);
+  BUNDLE.items.forEach(i => i.topics.forEach(t => { if (topicCounts[t] != null) topicCounts[t]++; }));
+
+  new Chart(document.getElementById('topic-chart'), {
+    type: 'doughnut',
+    data: {
+      labels: Object.keys(topicCounts).map(k => TOPIC_META[k].label),
+      datasets: [{
+        data: Object.values(topicCounts),
+        backgroundColor: Object.keys(topicCounts).map(k => TOPIC_META[k].hex),
+        borderWidth: 0
+      }]
+    },
+    options: {
+      plugins: { legend: { position: 'bottom', labels: { color: getComputedStyle(document.body).color } }, title: { display: true, text: '주제별 누적 분포', color: getComputedStyle(document.body).color } }
+    }
+  });
+
+  const byDate = {};
+  BUNDLE.items.forEach(i => { byDate[i.collected_at] = (byDate[i.collected_at] || 0) + 1; });
+  const dates = Object.keys(byDate).sort();
+
+  new Chart(document.getElementById('trend-chart'), {
+    type: 'line',
+    data: {
+      labels: dates,
+      datasets: [{
+        label: '일별 수집 건수',
+        data: dates.map(d => byDate[d]),
+        borderColor: '#2a78d6',
+        backgroundColor: 'rgba(42,120,214,0.15)',
+        fill: true,
+        tension: 0.2,
+        pointRadius: 3
+      }]
+    },
+    options: {
+      scales: { y: { beginAtZero: true, ticks: { precision: 0 } } },
+      plugins: { legend: { display: false }, title: { display: true, text: '일별 수집 건수 추이', color: getComputedStyle(document.body).color } }
+    }
+  });
+}
+
+applyStoredTheme();
+document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+BUNDLE.items.sort((a, b) => (b.collected_at + (b.published_date || '')).localeCompare(a.collected_at + (a.published_date || '')));
+renderHeader();
+renderStats();
+renderFilters();
+renderList();
+renderMap();
+renderCharts();
+</script>
+</body>
+</html>
