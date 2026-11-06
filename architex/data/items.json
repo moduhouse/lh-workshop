@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-01T21:00:00+09:00",
+  "last_updated": "2026-11-06T21:08:15+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -143,6 +143,55 @@
       "lon": null,
       "summary_ko": "세계자원연구소(WRI) 연구에 따르면 기후적응·회복력 분야 투자는 개발 투자 중 효과가 가장 큰 축에 속하며, 투입 비용 대비 약 10배의 편익을 창출하는 것으로 나타났다. 2025년 발표 자료로, 최신 동향 파악을 위한 배경자료로 수록한다.",
       "confidence_note": "2025년 발표 — 신규 소식이 아닌 배경자료로 구분 표시."
+    },
+    {
+      "id": "2026-11-06-cop31-scimex-briefing",
+      "collected_at": "2026-11-06",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "COP31 개막 앞두고 기자 대상 브리핑 — 11월 9~20일 튀르키예 안탈리아 개최",
+      "title_original": "Briefing alert: what to expect from COP31",
+      "source": "Science Media Centre (Scimex)",
+      "url": "https://www.scimex.org/newsfeed/briefing-alert-what-to-expect-from-cop31",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "AU"
+      ],
+      "related_countries": [
+        "TR",
+        "AU"
+      ],
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary_ko": "호주 과학미디어센터가 COP31(11월 9~20일, 안탈리아) 개막을 앞두고 11월 4일 기자 대상 브리핑을 안내했다. 튀르키예의 무라트 쿠룸이 COP31 의장, 호주의 크리스 보웬이 협상 의장을 맡는다.",
+      "confidence_note": "검색 결과 요약에 의존했으며 페이지 게시일은 확인하지 못해 published_date를 null로 둠(브리핑 일정은 11월 4일로 안내됨). 실제 협상 결과가 아닌 개막 전 전망 자료임."
+    },
+    {
+      "id": "2026-11-06-adaptation-canada-2026",
+      "collected_at": "2026-11-06",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "adaptation"
+      ],
+      "title_ko": "[배경자료] 캐나다 연방정부, '2026 적응 캐나다' 콘퍼런스서 기후 회복력 강화 방침 밝혀",
+      "title_original": "Federal Government Advances Climate Resilience at 2026 Adaptation Canada Conference",
+      "source": "Environment and Climate Change Canada",
+      "url": "https://www.canada.ca/en/environment-climate-change/news/2026/09/federal-government-advances-climate-resilience-at-2026-adaptation-canada-conference.html",
+      "region": "캐나다 토론토",
+      "source_countries": [
+        "CA"
+      ],
+      "related_countries": [
+        "CA"
+      ],
+      "lat": 43.65,
+      "lon": -79.38,
+      "summary_ko": "2026년 9월 22~24일 토론토에서 열린 '적응 캐나다 2026'에 캐나다 전역에서 1,000여 명이 참가했다. 연방정부는 국가 적응전략의 첫 이행 점검 보고서를 8월에 발표한 바 있다.",
+      "confidence_note": "최근 1~2일 소식이 아닌 2026년 9월 자료(URL 기준)로, 정확한 게시일은 확인하지 못함. 검색 결과 요약만 확인하고 원문 전체는 열람하지 않음."
     }
   ]
 }
