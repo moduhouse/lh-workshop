@@ -6,12 +6,20 @@
       "collected_at": "2026-11-01",
       "published_date": "2026-10-19",
       "type": "news",
-      "topics": ["climate_general"],
+      "topics": [
+        "climate_general"
+      ],
       "title_ko": "IPCC 65차 총회, 보고서 일정·예산 이견으로 파행 끝 정회",
       "title_original": "Intergovernmental Panel on Climate Change (IPCC-65) Summary report, 12-16 October 2026",
       "source": "Earth Negotiations Bulletin (IISD)",
       "url": "https://enb.iisd.org/intergovernmental-panel-climate-change-ipcc-65-summary",
       "region": "에티오피아 아디스아바바",
+      "source_countries": [
+        "CA"
+      ],
+      "related_countries": [
+        "ET"
+      ],
       "lat": 9.145,
       "lon": 40.4897,
       "summary_ko": "10월 12~16일 에티오피아 아디스아바바에서 열린 IPCC 65차 총회가 제3차 평가주기 실무그룹 보고서 제출 일정과 잔여 예산을 둘러싼 선진국·개도국 간 이견을 좁히지 못했다. 다수의 개도국 대표단이 퇴장한 상태에서 짐 스키아 의장이 정회를 선언했다. 115개국 225명의 패널위원을 포함해 약 334명이 참석했다.",
@@ -22,12 +30,23 @@
       "collected_at": "2026-11-01",
       "published_date": "2026-11-09",
       "type": "news",
-      "topics": ["climate_general", "adaptation"],
+      "topics": [
+        "climate_general",
+        "adaptation"
+      ],
       "title_ko": "COP31, 11월 9~20일 터키 안탈리아서 개막...'이행 COP' 표방",
       "title_original": "COP31 Antalya - 31st UN Climate Change Conference",
       "source": "UNFCCC / 터키 기후변화부(iklim.gov.tr)",
       "url": "https://iklim.gov.tr/en/cop31-president-kurum-announces-turkiye-s-cop31-vision-at-the-un-general-assembly-news-4895",
       "region": "터키 안탈리아",
+      "source_countries": [
+        "DE",
+        "TR"
+      ],
+      "related_countries": [
+        "TR",
+        "AU"
+      ],
       "lat": 36.8969,
       "lon": 30.7133,
       "summary_ko": "2026 UN기후변화협약 당사국총회(COP31)가 11월 9~20일 터키 안탈리아 엑스포센터에서 열린다. 터키가 의장국으로 Action Agenda를 주도하고 호주가 협상을 주재하는 이례적인 공동 운영 방식이다. 제2차 전지구적 이행점검(Global Stocktake)과 함께 기후회복력 도시·자연기반해법 등 적응 분야가 핵심 의제로 꼽힌다.",
@@ -38,12 +57,20 @@
       "collected_at": "2026-11-01",
       "published_date": null,
       "type": "news",
-      "topics": ["disaster"],
+      "topics": [
+        "disaster"
+      ],
       "title_ko": "미국 남동부, 극심한 가뭄 속 산불 매일 확산...조지아주 비상사태",
       "title_original": "Southeast faces explosive wildfire activity despite recent rainfall due to exceptional drought",
       "source": "AccuWeather",
       "url": "https://www.accuweather.com/en/weather-news/southeast-faces-explosive-wildfire-activity-despite-recent-rainfall-due-to-exceptional-drought/1885848",
       "region": "미국 조지아·남동부",
+      "source_countries": [
+        "US"
+      ],
+      "related_countries": [
+        "US"
+      ],
       "lat": 32.1656,
       "lon": -82.9001,
       "summary_ko": "북플로리다·남조지아·캐롤라이나 등 미국 남동부에 극심한 가뭄이 이어지며 산불이 매일 새로 발생하고 있다. 조지아 주지사가 비상사태를 선포했으며, 2026년 산불 시즌 전체로는 550만 에이커 이상이 소실될 것이라는 전망도 함께 보도됐다.",
@@ -54,12 +81,18 @@
       "collected_at": "2026-11-01",
       "published_date": "2026-10-26",
       "type": "data_update",
-      "topics": ["disaster"],
+      "topics": [
+        "disaster"
+      ],
       "title_ko": "국제재난데이터베이스 EM-DAT, 공개 테이블 '주간 갱신' 체계 명문화",
       "title_original": "EM-DAT documentation — update protocol",
       "source": "EM-DAT (CRED / UCLouvain)",
       "url": "https://doc.emdat.be/docs/introduction/",
       "region": "글로벌",
+      "source_countries": [
+        "BE"
+      ],
+      "related_countries": [],
       "lat": null,
       "lon": null,
       "summary_ko": "전 세계 재난 피해·사망 통계를 집계하는 EM-DAT가 공개 데이터 테이블의 갱신 주기를 주간 단위로 명시한 프로토콜을 공개했다. Our World in Data가 인용하는 EM-DAT 2026년판 사망자·피해자 지표는 각각 4월, 10월 스냅샷 기준으로 갱신되어 있다.",
@@ -70,12 +103,20 @@
       "collected_at": "2026-11-01",
       "published_date": null,
       "type": "paper",
-      "topics": ["adaptation"],
+      "topics": [
+        "adaptation"
+      ],
       "title_ko": "[연구] '회복력'보다 '적응' 프레이밍이 홍수 대비 행동 의향 더 높여",
       "title_original": "How we talk about climate change solutions matters",
       "source": "Carnegie Mellon 관련 연구 (매체 보도, 저널 미확정)",
       "url": "https://realgoodcenter.jou.ufl.edu/researchinsights/how-we-talk-about-climate-change-solutions-matters/",
       "region": "미국",
+      "source_countries": [
+        "US"
+      ],
+      "related_countries": [
+        "US"
+      ],
       "lat": 39.8283,
       "lon": -98.5795,
       "summary_ko": "450명을 대상으로 한 실험연구에서 '회복력(resilience)' 메시지를 접한 응답자가 '적응(adaptation)' 메시지를 접한 응답자보다 홍수 대비 행동 의향이 낮게 나타났다. 보도마다 저널 출처 표기가 엇갈려, 인용 전 원 논문 확인이 필요하다.",
@@ -86,12 +127,18 @@
       "collected_at": "2026-11-01",
       "published_date": "2025-06-01",
       "type": "paper",
-      "topics": ["adaptation"],
+      "topics": [
+        "adaptation"
+      ],
       "title_ko": "[배경자료] WRI, \"기후적응·회복력 투자, 비용 대비 10배 편익\" 발표",
       "title_original": "WRI study reveals ten-fold impact of climate adaptation and resilience investments",
       "source": "World Resources Institute / NextBillion",
       "url": "https://nextbillion.net/news/wri-study-reveals-ten-fold-impact-of-climate-adaptation-and-resilience-investments",
       "region": "글로벌",
+      "source_countries": [
+        "US"
+      ],
+      "related_countries": [],
       "lat": null,
       "lon": null,
       "summary_ko": "세계자원연구소(WRI) 연구에 따르면 기후적응·회복력 분야 투자는 개발 투자 중 효과가 가장 큰 축에 속하며, 투입 비용 대비 약 10배의 편익을 창출하는 것으로 나타났다. 2025년 발표 자료로, 최신 동향 파악을 위한 배경자료로 수록한다.",

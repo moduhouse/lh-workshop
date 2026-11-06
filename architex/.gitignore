@@ -1,0 +1,12 @@
+# 빌드 산출물이지만 GitHub Pages(레거시 브랜치 배포)가 이 파일을 직접 서빙하므로 커밋 대상
+# (GitHub Actions가 데이터/템플릿 변경 시 자동 재생성 후 커밋함 — 직접 수정하지 말 것)
+_site/
+
+# 로컬 백업본
+*.before-*.html
+*.before-*.json
+
+__pycache__/
+.DS_Store
+Thumbs.db
+desktop.ini
