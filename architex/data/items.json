@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-06T21:08:15+09:00",
+  "last_updated": "2026-11-07T21:05:00+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -192,6 +192,50 @@
       "lon": -79.38,
       "summary_ko": "2026년 9월 22~24일 토론토에서 열린 '적응 캐나다 2026'에 캐나다 전역에서 1,000여 명이 참가했다. 연방정부는 국가 적응전략의 첫 이행 점검 보고서를 8월에 발표한 바 있다.",
       "confidence_note": "최근 1~2일 소식이 아닌 2026년 9월 자료(URL 기준)로, 정확한 게시일은 확인하지 못함. 검색 결과 요약만 확인하고 원문 전체는 열람하지 않음."
+    },
+    {
+      "id": "2026-11-07-china-disaster-losses-9m",
+      "collected_at": "2026-11-07",
+      "published_date": null,
+      "type": "data_update",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "중국, 올해 1~9월 자연재해 직접 손실 1,994억 위안(약 299억 달러)",
+      "title_original": "China's natural disaster losses hit $30 billion in first nine months of 2026",
+      "source": "Devdiscourse (중국 응급관리부 발표 인용)",
+      "url": "https://www.devdiscourse.com/article/international/3996215-chinas-natural-disaster-losses-hit-30-billion-in-first-nine-months-of-2026",
+      "region": "중국",
+      "source_countries": [],
+      "related_countries": [
+        "CN"
+      ],
+      "lat": 35.86,
+      "lon": 104.2,
+      "summary_ko": "중국 응급관리부에 따르면 2026년 1~9월 자연재해로 인한 직접 경제 손실이 1,993.6억 위안(약 299억 달러)에 달했다. 손실은 주로 태풍·홍수·산사태에서 발생했다.",
+      "confidence_note": "검색 결과 요약만 확인했고 원문 접속이 차단되어 열람하지 못함. 정확한 게시일 미확인(최근 보도로 추정). 매체 소재국도 확인하지 못해 source_countries는 비워 둠."
+    },
+    {
+      "id": "2026-11-07-eu-hoekstra-pre-cop31",
+      "collected_at": "2026-11-07",
+      "published_date": "2026-10-07",
+      "type": "news",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "[배경자료] 호이크스트라 EU 집행위원, COP31 사전회의서 새 기후계획·재원 요구",
+      "title_original": "Hoekstra på pre-COP31: EU kræver nye klimaplaner og finansiering",
+      "source": "Lovguiden (EU 집행위 보도자료 게재)",
+      "url": "https://lovguiden.dk/en/det-offentlige/europa-kommissionen-press-corner/2026-10-07-hoekstra-paa-pre-cop31-eu-kraever-nye-klimaplaner-og-finansiering",
+      "region": "글로벌",
+      "source_countries": [
+        "DK"
+      ],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "제목 기준으로, EU는 COP31 사전회의에서 각국에 새로운 기후계획 제출과 기후재원 확대를 요구했다. COP31은 11월 9~20일 튀르키예 안탈리아에서 열릴 예정이다.",
+      "confidence_note": "본문은 열람하지 못하고 검색 결과 제목·URL 날짜(2026-10-07)만 확인함. 최근 1~2일 소식이 아닌 배경자료. 게재처가 덴마크 사이트로 보여 출처국을 DK로 적었으나 불확실."
     }
   ]
 }
