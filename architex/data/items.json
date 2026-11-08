@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07T21:05:00+09:00",
+  "last_updated": "2026-11-08T21:05:00+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -236,6 +236,97 @@
       "lon": null,
       "summary_ko": "제목 기준으로, EU는 COP31 사전회의에서 각국에 새로운 기후계획 제출과 기후재원 확대를 요구했다. COP31은 11월 9~20일 튀르키예 안탈리아에서 열릴 예정이다.",
       "confidence_note": "본문은 열람하지 못하고 검색 결과 제목·URL 날짜(2026-10-07)만 확인함. 최근 1~2일 소식이 아닌 배경자료. 게재처가 덴마크 사이트로 보여 출처국을 DK로 적었으나 불확실."
+    },
+    {
+      "id": "2026-11-08-copernicus-2026-second-1p5",
+      "collected_at": "2026-11-08",
+      "published_date": "2026-11-05",
+      "type": "data_update",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "코페르니쿠스 \"2026년, 관측 사상 두 번째로 1.5℃ 넘는 해 될 듯\"… 10월 유럽 건조·하천 유량 급감",
+      "title_original": "Copernicus Climate Bulletin (November 2026)",
+      "source": "Copernicus Climate Change Service (C3S)",
+      "url": "https://climate.copernicus.eu/climate-bulletin",
+      "region": "글로벌",
+      "source_countries": [],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "코페르니쿠스 기후 변화 서비스는 2026년 연평균 기온 상승폭이 산업화 이전 대비 1.56~1.61℃로 예측돼 2024년에 이어 두 번째로 1.5℃를 넘는 해가 될 것이라고 밝혔다. 10월 유럽 대부분 지역이 건조했고 하천 유량도 매우 낮았다고 전했다.",
+      "confidence_note": "검색 결과 요약문으로만 확인했고 원문 월간 보고서는 열람하지 못함. 게재일(11월 5일)은 검색 결과 기준이며 URL은 월간 보고서 목록 페이지로 특정 호 링크가 아님. 코페르니쿠스(C3S)는 ECMWF 운영 기구로 본부 소재국(영국/독일/이탈리아 분산)이 불명확해 출처국을 비워 둠."
+    },
+    {
+      "id": "2026-11-08-wmo-nov-jan-seasonal-elnino",
+      "collected_at": "2026-11-08",
+      "published_date": "2026-10-26",
+      "type": "data_update",
+      "topics": [
+        "disaster",
+        "climate_general"
+      ],
+      "title_ko": "[배경자료] WMO 계절전망: 엘니뇨 이례적 강세 가능성, 11~1월 더 강해질 전망",
+      "title_original": "Global Seasonal Climate Update for November-December-January 2026",
+      "source": "세계기상기구(WMO)",
+      "url": "https://wmo.int/resources/publication-series/global-seasonal-climate-updates/gscu-ndj2026",
+      "region": "글로벌",
+      "source_countries": [
+        "CH"
+      ],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "WMO는 현재 진행 중인 엘니뇨가 관측 사상 유례없는 강도에 이를 수 있으며 11월~1월 사이 더 강해질 것으로 전망했다. 이는 세계 각지의 홍수·가뭄 위험에 영향을 줄 수 있다.",
+      "confidence_note": "검색 결과 스니펫으로만 확인, 원문 미열람. 발표일(10월 26일 전후)은 검색 결과 기준이라 최근 1~2일 소식이 아닌 배경자료. 지역별 영향 서술은 일반적 엘니뇨 영향에 대한 해설이며 원문 내용이 아닐 수 있음."
+    },
+    {
+      "id": "2026-11-08-unep-emissions-gap-2026",
+      "collected_at": "2026-11-08",
+      "published_date": "2026-10-21",
+      "type": "paper",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "[배경자료] UNEP 배출 격차 보고서 2026: 지구 기온 1.5℃ 초과 불가피, 대폭 감축 촉구",
+      "title_original": "As temperatures spike, this new report outlines humanity's options for containing climate change",
+      "source": "유엔환경계획(UNEP)",
+      "url": "https://www.unep.org/en/news-and-stories/story/temperatures-spike-new-report-outlines-humanitys-options-containing-climate",
+      "region": "글로벌",
+      "source_countries": [
+        "KE"
+      ],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "UNEP는 2026 배출 격차 보고서에서 지구 기온이 1.5℃를 넘어설 전망이라며, 세기말까지 1.5℃ 수준으로 되돌리려면 온실가스 배출의 신속하고 강력한 감축이 필요하다고 밝혔다.",
+      "confidence_note": "검색 결과 요약으로만 확인, 원문 미열람. 발표일(10월 21일)은 검색 결과 기준이며 최근 1~2일 소식이 아닌 배경자료. 구체 수치는 확인하지 못해 수록하지 않음."
+    },
+    {
+      "id": "2026-11-08-cop31-antalya-preview-boell",
+      "collected_at": "2026-11-08",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "climate_general",
+        "adaptation"
+      ],
+      "title_ko": "[배경자료] COP31 안탈리아 개막 앞두고… 튀르키예 개최·호주 협상 주도 '분할 의장국', 적응목표·NDC 쟁점",
+      "title_original": "COP31: UN-Klimakonferenz in Antalya, Türkei",
+      "source": "하인리히 뵐 재단(Heinrich-Böll-Stiftung)",
+      "url": "https://www.boell.de/de/cop-klimakonferenz",
+      "region": "튀르키예",
+      "source_countries": [
+        "DE"
+      ],
+      "related_countries": [
+        "TR",
+        "AU"
+      ],
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary_ko": "제31차 유엔기후변화당사국총회(COP31)가 11월 9~20일 튀르키예 안탈리아에서 열린다. 튀르키예가 개최하고 호주가 협상을 이끄는 첫 분할 의장국 체제이며, 글로벌 이행점검(GST)·NDC, 적응에 관한 글로벌 목표(GGA), 정의로운 전환 등이 핵심 의제로 꼽힌다.",
+      "confidence_note": "검색 결과 스니펫으로만 확인했고 페이지 갱신일을 알 수 없어 published_date는 null. 개막 직전 전망 자료로 협상 결과 보도는 아님. lat/lon은 안탈리아 근사 좌표."
     }
   ]
 }
