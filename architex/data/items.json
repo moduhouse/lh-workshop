@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-08T21:05:00+09:00",
+  "last_updated": "2026-11-09T21:15:00+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -327,6 +327,55 @@
       "lon": 30.7,
       "summary_ko": "제31차 유엔기후변화당사국총회(COP31)가 11월 9~20일 튀르키예 안탈리아에서 열린다. 튀르키예가 개최하고 호주가 협상을 이끄는 첫 분할 의장국 체제이며, 글로벌 이행점검(GST)·NDC, 적응에 관한 글로벌 목표(GGA), 정의로운 전환 등이 핵심 의제로 꼽힌다.",
       "confidence_note": "검색 결과 스니펫으로만 확인했고 페이지 갱신일을 알 수 없어 published_date는 null. 개막 직전 전망 자료로 협상 결과 보도는 아님. lat/lon은 안탈리아 근사 좌표."
+    },
+    {
+      "collected_at": "2026-11-09",
+      "published_date": null,
+      "type": "news",
+      "region": "튀르키예",
+      "lat": 36.9,
+      "lon": 30.7,
+      "source_countries": [
+        "TR"
+      ],
+      "related_countries": [
+        "TR"
+      ],
+      "id": "2026-11-09-cop31-turkiye-plans-hurriyet",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "COP31 개막 앞두고 튀르키예, 안탈리아 회의 구상 공개… 11~12일 정상회의",
+      "title_original": "Türkiye details COP31 plans ahead of Antalya summit",
+      "source": "Hürriyet Daily News",
+      "url": "https://www.hurriyetdailynews.com/turkiye-details-cop31-plans-ahead-of-antalya-summit-227373",
+      "summary_ko": "튀르키예가 11월 9~20일 안탈리아에서 열리는 COP31의 운영 계획을 설명했다. 11~12일 정상회의가 예정돼 있으며, 기존 합의를 이행으로 옮기는 것과 재원 문제가 핵심 의제로 거론된다.",
+      "confidence_note": "검색 결과 스니펫으로만 확인했고 기사 게재일을 알 수 없어 published_date는 null. 개막 당일 현장 보도는 아니며 정상회의 일정 등은 보도 시점 기준 계획. lat/lon은 안탈리아 근사 좌표."
+    },
+    {
+      "collected_at": "2026-11-09",
+      "published_date": null,
+      "type": "news",
+      "region": "튀르키예",
+      "lat": 36.9,
+      "lon": 30.7,
+      "source_countries": [
+        "TR"
+      ],
+      "related_countries": [
+        "TR"
+      ],
+      "id": "2026-11-09-cop31-environment-minister-hurriyet",
+      "topics": [
+        "climate_general",
+        "adaptation"
+      ],
+      "title_ko": "튀르키예 환경장관 \"COP31, 기후협력 새 시대 열 것\"… 청정에너지·기후회복 도시 강조",
+      "title_original": "Environment minister says COP31 in Antalya to open new era of climate cooperation",
+      "source": "Hürriyet Daily News",
+      "url": "https://hurriyetdailynews.com/environment-minister-says-cop31-in-antalya-to-open-new-era-of-climate-cooperation-221329",
+      "summary_ko": "무랏 쿠룸 환경장관은 COP31이 과거 결정을 행동으로 옮기는 자리가 될 것이라며 재원을 핵심으로 꼽았다. 청정에너지 전환, 제로웨이스트, 기후회복력 도시 등이 튀르키예 의장국의 우선과제로 제시됐다.",
+      "confidence_note": "검색 결과 스니펫 기반이며 게재일 불명이라 published_date는 null. 장관 발언은 보도 인용으로 원문 대조 필요. lat/lon은 안탈리아 근사 좌표."
     }
   ]
 }
