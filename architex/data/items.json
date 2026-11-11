@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-10T21:15:00+09:00",
+  "last_updated": "2026-11-11T21:10:01+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -422,6 +422,123 @@
       "lon": null,
       "summary_ko": "말레이시아 더스타가 2026년 8월 각국의 폭염·홍수·가뭄·폭풍 상황을 사진으로 묶어 보도했다. 가자지구 폭염, 독일 라인강 가뭄 등이 포함된 것으로 검색 결과에 소개됐다.",
       "confidence_note": "발표 시점이 2026-08-11(약 3개월 전)인 배경자료. 검색 스니펫만 확인했고 본문 미검증. 날짜는 URL 기준."
+    },
+    {
+      "id": "2026-11-11-wmo-state-of-climate-cop31",
+      "collected_at": "2026-11-11",
+      "published_date": "2026-11-09",
+      "type": "data_update",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "WMO \"2026년, 관측 사상 가장 더운 4개 해 중 하나\"… COP31 개막일 기후현황 발표",
+      "title_original": "State of the climate in 2026 gives new meaning to phrase “off the charts”",
+      "source": "세계기상기구(WMO)",
+      "url": "https://wmo.int/node/39187",
+      "region": "글로벌",
+      "source_countries": [
+        "CH"
+      ],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "WMO가 COP31 개막일에 발표한 기후현황 업데이트에 따르면 2026년 1~9월 지구 평균기온은 산업화 이전 대비 약 1.47℃ 높았고, 2026년은 관측 사상 가장 더운 4개 해 중 하나가 될 전망이다. 해양 열량과 전 지구 평균 해수면도 기록적 수준이며, 최종 보고서는 2027년 3월 나온다.",
+      "confidence_note": "검색 결과 요약 기준으로 본문 수치는 직접 대조하지 않음. 일부 매체(케냐 StreamlineFeed)는 '가장 더운 해'로 보도했으나 WMO 원문 표현은 '4개 해 중 하나'. 9월까지 자료라 최근 엘니뇨 영향은 미반영."
+    },
+    {
+      "id": "2026-11-11-cop31-opens-antalya",
+      "collected_at": "2026-11-11",
+      "published_date": "2026-11-09",
+      "type": "news",
+      "topics": [
+        "climate_general",
+        "adaptation"
+      ],
+      "title_ko": "COP31 안탈리아서 개막… 기후재원 의제 놓고 개막식 1시간 반 지연",
+      "title_original": "COP31 opens as climate and geopolitical pressures mount",
+      "source": "EWN (Eyewitness News, AFP 인용)",
+      "url": "https://www.ewn.co.za/2026/11/09/cop31-opens-as-climate-and-geopolitical-pressures-mount",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "ZA"
+      ],
+      "related_countries": [
+        "TR"
+      ],
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary_ko": "제31차 유엔기후변화협약 당사국총회(COP31)가 11월 9일 튀르키예 안탈리아에서 개막해 20일까지 열린다. 개발도상국의 기후재원 요구를 공식 의제에 넣을지를 둘러싼 밤샘 협상으로 개막식이 약 1시간 반 늦어졌고, 구테흐스 유엔 사무총장은 각국 정상에게 '진지해질 것'을 촉구했다. 개막과 함께 보건 회복력을 위한 '안탈리아 이니셔티브'도 출범한 것으로 전해졌다.",
+      "confidence_note": "AFP 기사 재전재본 기준. 개막식 지연 시간·의제 타결 내용은 검색 결과 요약에서 확인했으며 원문 전체는 미검증."
+    },
+    {
+      "id": "2026-11-11-unep-adaptation-gap-2026",
+      "collected_at": "2026-11-11",
+      "published_date": "2026-11-04",
+      "type": "paper",
+      "topics": [
+        "adaptation"
+      ],
+      "title_ko": "UNEP 적응격차보고서 2026 \"준비됐나? 아니다\"… 개도국 적응 수요 연 3,050억 달러",
+      "title_original": "Adaptation Gap Report 2026: Ready? Not. — UNEP Executive Director media statement",
+      "source": "유엔환경계획(UNEP)",
+      "url": "https://www.unep.org/en/news-and-stories/speech/unep-executive-director-media-statement-adaptation-gap-report-2026",
+      "region": "글로벌",
+      "source_countries": [
+        "KE"
+      ],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "UNEP가 COP31을 앞두고 11월 4일 나이로비에서 발표한 적응격차보고서는 개발도상국의 연간 적응 수요를 약 3,050억 달러(2035년 물가 반영 시 최대 4,200억 달러)로 추산했다. 국제 공공 적응재원은 2023~2024년 사이 약 10억 달러 늘어나는 데 그쳤고, 민간재원으로 메울 수 있는 격차도 15~20% 수준으로 평가됐다.",
+      "confidence_note": "수치는 IISD SDG Knowledge Hub·Down to Earth 등 복수 매체 보도에서 일치하나 보고서 원문은 직접 확인하지 않음. 발표일 11월 4일은 보도 기준. 2026-11-08 수록된 UNEP 배출격차보고서와는 별개 보고서."
+    },
+    {
+      "id": "2026-11-11-gaza-floods-shelters",
+      "collected_at": "2026-11-11",
+      "published_date": "2026-11-08",
+      "type": "news",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "가자지구 폭우로 피란민 천막 침수… 어린이 4명 포함 5명 사망",
+      "title_original": "Four children among five killed in Gaza floods",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter",
+      "region": "팔레스타인 가자지구",
+      "source_countries": [
+        "QA"
+      ],
+      "related_countries": [
+        "PS"
+      ],
+      "lat": 31.42,
+      "lon": 34.38,
+      "summary_ko": "11월 7~9일 가자지구에 폭우와 강풍이 몰아쳐 피란민 천막과 임시 대피소가 침수됐다. 가자 중부에서 모래둑이 무너지며 어린이 4명을 포함해 최소 5명이 숨졌고, 유엔에 따르면 8일 기준 2만6천여 가구가 대피소·물품 피해로 지원을 요청했다.",
+      "confidence_note": "사망자 수·피해 가구 수는 Al Jazeera·UN News(https://news.un.org/en/story/2026/11/1168766) 검색 요약 기준. 날짜는 URL 기준. 사망자 수는 추가 집계로 바뀔 수 있음."
+    },
+    {
+      "id": "2026-11-11-us-southwest-floods-2026",
+      "collected_at": "2026-11-11",
+      "published_date": "2026-11-06",
+      "type": "news",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "미 남서부 기습폭우로 수천 명 대피·인명피해… 저수지 수위는 반등",
+      "title_original": "The 2026 Southwest floods: A look at reservoir gains and damage",
+      "source": "Western Water",
+      "url": "https://www.western-water.com/2026/11/06/the-2026-southwest-floods-a-look-at-reservoir-gains-and-damage/",
+      "region": "미국 애리조나·콜로라도·뉴멕시코",
+      "source_countries": [
+        "US"
+      ],
+      "related_countries": [
+        "US"
+      ],
+      "lat": 34.5,
+      "lon": -111.9,
+      "summary_ko": "10월 말~11월 초 폭풍이 애리조나·콜로라도·유타·뉴멕시코에 기습 홍수를 일으켜 세도나·파고사스프링스 등에서 수천 명이 대피했고 애리조나·뉴멕시코에서 사망자가 발생했다. 11월 3일 선거일에는 애리조나 북동부 원주민 공동체에서 도로 유실로 투표가 차질을 빚었으며, 한편 가뭄에 시달리던 저수지 수위는 상승했다.",
+      "confidence_note": "사망자 수는 매체별로 달라 명시하지 않음(CNN·Washington Times 보도 병행 확인 필요). 날짜는 URL 기준. 좌표는 애리조나 중부 근사값."
     }
   ]
 }
