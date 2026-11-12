@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-10T21:15:00+09:00",
+  "last_updated": "2026-11-12T21:10:00+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -422,6 +422,100 @@
       "lon": null,
       "summary_ko": "말레이시아 더스타가 2026년 8월 각국의 폭염·홍수·가뭄·폭풍 상황을 사진으로 묶어 보도했다. 가자지구 폭염, 독일 라인강 가뭄 등이 포함된 것으로 검색 결과에 소개됐다.",
       "confidence_note": "발표 시점이 2026-08-11(약 3개월 전)인 배경자료. 검색 스니펫만 확인했고 본문 미검증. 날짜는 URL 기준."
+    },
+    {
+      "id": "2026-11-12-unep-adaptation-gap-2026",
+      "collected_at": "2026-11-12",
+      "published_date": "2026-11-04",
+      "type": "paper",
+      "topics": [
+        "adaptation"
+      ],
+      "title_ko": "UNEP 적응격차보고서 2026 \"준비됐나? 아니다\"… 개도국 적응 수요 연 3,050억 달러",
+      "title_original": "Adaptation Gap Report 2026: Ready? Not. (UNEP Executive Director media statement)",
+      "source": "UNEP (유엔환경계획)",
+      "url": "https://www.unep.org/en/news-and-stories/speech/unep-executive-director-media-statement-adaptation-gap-report-2026",
+      "region": "글로벌",
+      "source_countries": [
+        "KE"
+      ],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "UNEP가 2026년 적응격차보고서를 내고 개발도상국의 연간 적응 재원 수요를 약 3,050억 달러(2035년 인플레이션 반영 시 약 4,200억 달러)로 추산했다. 국제 공공 적응재원은 2023~2024년 사이 10억 달러 늘어나는 데 그쳐, 국제 재원을 3배로 늘려도 수요의 20~29%만 충당 가능하다고 경고했다. 보고서는 안탈리아 COP31 협상의 기초자료로 쓰일 전망이다.",
+      "confidence_note": "발표일(2026-11-04)과 수치는 IISD SDG Knowledge Hub·Down to Earth 등 언론 보도 및 검색 스니펫 기준이며 보고서 원문은 미확인. 이전 수집분(Carbon Brief 11-06 뉴스레터 언급)과 주제가 겹치나 별도 원문 출처로 수록."
+    },
+    {
+      "id": "2026-11-12-cop31-opens-guterres-get-serious",
+      "collected_at": "2026-11-12",
+      "published_date": "2026-11-09",
+      "type": "news",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "COP31 안탈리아서 개막… 구테흐스 \"극한기후의 시대, 이제 진지해져야\" 첫날부터 재원 공방",
+      "title_original": "'Get serious': COP31 opens in Antalya with leaders under pressure to tackle climate crisis",
+      "source": "Malay Mail (AFP 계열 보도 추정)",
+      "url": "https://www.malaymail.com/news/world/2026/11/09/get-serious-cop31-opens-in-antalya-with-leaders-under-pressure-to-tackle-climate-crisis/242615",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "MY"
+      ],
+      "related_countries": [
+        "TR"
+      ],
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary_ko": "제31차 유엔기후변화협약 당사국총회(COP31)가 11월 9일 튀르키예 안탈리아에서 개막했다(~20일). 안토니우 구테흐스 유엔 사무총장은 \"극한기후의 새 시대에 들어섰다\"며 감축 가속, 화석연료로부터의 정의로운 전환, 취약국 재원 제공을 촉구했고, 개도국이 기후재원 의제 채택을 요구하며 개막식이 지연되는 등 첫날부터 재원 공방이 벌어졌다. 미국은 정부 대표단을 보내지 않았다.",
+      "confidence_note": "검색 결과(Malay Mail·Khaleej Times·Kuwait Times 등) 스니펫 기준, 본문 미확인. 원 통신사(AFP 등)는 확인 안 됨. 개막식 지연 시간은 매체별로 1시간/1시간 30분으로 엇갈림. URL은 검색 결과의 AMP 주소에서 /amp를 제거한 형태."
+    },
+    {
+      "id": "2026-11-12-aceh-fresh-floods-landslides",
+      "collected_at": "2026-11-12",
+      "published_date": "2026-11-12",
+      "type": "news",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "인도네시아 아체에 또 홍수·산사태… 13개 군·시 피해로 복구 차질",
+      "title_original": "Fresh floods and landslides hit Aceh, hamper disaster recovery",
+      "source": "The Jakarta Post",
+      "url": "http://www.thejakartapost.com/indonesia/2026/11/12/fresh-floods-and-landslides-hit-aceh-hamper-disaster-recovery",
+      "region": "인도네시아 아체",
+      "source_countries": [
+        "ID"
+      ],
+      "related_countries": [
+        "ID"
+      ],
+      "lat": 4.7,
+      "lon": 96.7,
+      "summary_ko": "자카르타포스트는 아체주 13개 군·시에 새로운 홍수와 산사태가 발생해 기존 재난 복구 작업이 차질을 빚고 있다고 보도했다. 중부 아체의 한 마을에서는 산사태로 주도로가 막혔으나 해당 지점의 인명 피해·대피는 보고되지 않았다.",
+      "confidence_note": "날짜는 URL 기준. 검색 요약만 확인했고 전체 사망·이재민 규모는 확인되지 않음."
+    },
+    {
+      "id": "2026-11-12-gaza-floods-sandbank-collapse",
+      "collected_at": "2026-11-12",
+      "published_date": "2026-11-08",
+      "type": "news",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "가자지구 폭우로 모래둑 붕괴, 어린이 4명 등 5명 사망… 텐트 7만 동 침수",
+      "title_original": "Four children among five killed in Gaza floods",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter",
+      "region": "팔레스타인 가자지구",
+      "source_countries": [
+        "QA"
+      ],
+      "related_countries": [
+        "PS"
+      ],
+      "lat": 31.4,
+      "lon": 34.4,
+      "summary_ko": "가자지구 중부에서 폭우로 모래둑이 무너져 어린이 4명을 포함해 최소 5명이 숨졌다고 현지 보건당국을 인용해 알자지라가 보도했다. 12시간 동안 이어진 폭우로 약 35만 명이 머무는 텐트 약 7만 동이 침수된 것으로 전해졌다.",
+      "confidence_note": "날짜는 URL 기준(2026-11-08), 수집일 기준 4일 전. 사망자·텐트 수는 검색 요약 기준이며 본문 미확인. 세이브더칠드런 11-09 성명도 유사 내용 보도."
     }
   ]
 }
