@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-12T21:10:00+09:00",
+  "last_updated": "2026-11-13T21:10:39+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -516,6 +516,100 @@
       "lon": 34.4,
       "summary_ko": "가자지구 중부에서 폭우로 모래둑이 무너져 어린이 4명을 포함해 최소 5명이 숨졌다고 현지 보건당국을 인용해 알자지라가 보도했다. 12시간 동안 이어진 폭우로 약 35만 명이 머무는 텐트 약 7만 동이 침수된 것으로 전해졌다.",
       "confidence_note": "날짜는 URL 기준(2026-11-08), 수집일 기준 4일 전. 사망자·텐트 수는 검색 요약 기준이며 본문 미확인. 세이브더칠드런 11-09 성명도 유사 내용 보도."
+    },
+    {
+      "id": "2026-11-13-global-carbon-budget-2026-fossil-co2-dip",
+      "collected_at": "2026-11-13",
+      "published_date": "2026-11-10",
+      "type": "paper",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "글로벌 탄소예산 2026: 화석연료 CO2 배출 0.4% 감소 전망… 이란 분쟁 따른 석유 소비 위축 영향",
+      "title_original": "Analysis: Fossil-fuel CO2 emissions set to dip in 2026 as Iran conflict hits oil use",
+      "source": "Carbon Brief (Global Carbon Project 보고서 저자 분석)",
+      "url": "https://www.carbonbrief.org/analysis-fossil-fuel-co2-emissions-set-to-dip-in-2026-as-iran-conflict-hits-oil-use",
+      "region": "글로벌",
+      "source_countries": [
+        "GB"
+      ],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "Global Carbon Project의 '글로벌 탄소예산 2026'은 올해 화석연료 CO2 배출이 약 0.4% 줄어 약 382억 t이 될 것으로 전망했다(범위 -1.5%~+0.6%). 석유(-1.9%) 감소는 이란 분쟁에 따른 에너지 충격 등 일시적 요인 영향이 커 구조적 감소로 보기 어렵고, 토지이용 변화를 포함한 총배출은 433억 t으로 사상 최대가 될 전망이다. 1.5°C 잔여 탄소예산은 약 1,500억 t으로 현 추세라면 4년 안에 소진된다.",
+      "confidence_note": "보고서 공개일(2026-11-10)은 검색 요약 기준이며 Carbon Brief 기사 자체 날짜는 미확인. 수치는 검색 요약(엑서터대 보도자료·Argus·Carbon Brief) 기준이며 본문 미열람. 원 논문은 Earth System Science Data 게재로 전해짐."
+    },
+    {
+      "id": "2026-11-13-cop31-climate-finance-work-programme",
+      "collected_at": "2026-11-13",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "climate_general",
+        "adaptation"
+      ],
+      "title_ko": "COP31, 독립 '기후재원 작업프로그램' 채택… 적응재원 3배·무역조치 별도 의제는 제외",
+      "title_original": "COP31 adopts climate finance work programme; proposals for adaptation funding, trade measures dropped",
+      "source": "Down To Earth",
+      "url": "https://www.downtoearth.org.in/climate-change/cop31-adopts-climate-finance-work-programme-proposals-for-adaptation-funding-trade-measures-dropped",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "IN"
+      ],
+      "related_countries": [
+        "TR",
+        "IN"
+      ],
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary_ko": "튀르키예 안탈리아에서 열리는 COP31이 인도 등 개발도상국이 요구해 온 독립 '기후재원 작업프로그램'을 EU의 반대에도 채택했다. 반면 적응재원 3배 확대와 기후 관련 무역조치를 다룰 별도 의제 제안은 빠졌고, 녹색기후기금 재원 문제는 기존 의제에서 논의하기로 했다.",
+      "confidence_note": "기사 발행일 미확인(개막 첫날인 11-09 의제 채택 관련 보도로 추정되나 확정 불가). 사이트 접속 불가로 본문 미열람, 검색 요약 기준."
+    },
+    {
+      "id": "2026-11-13-africa-triple-adaptation-finance-off-agenda",
+      "collected_at": "2026-11-13",
+      "published_date": "2026-11-12",
+      "type": "news",
+      "topics": [
+        "adaptation"
+      ],
+      "title_ko": "아프리카의 '적응재원 3배' 요구, COP31 공식 의제서 밀려나… 기존 의제 내 논의로",
+      "title_original": "Africa's Push to Triple Adaptation Finance Left Off Official COP31 Agenda",
+      "source": "allAfrica.com",
+      "url": "https://allafrica.com/stories/202611120246.html",
+      "region": "아프리카",
+      "source_countries": [],
+      "related_countries": [
+        "TR"
+      ],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "아프리카 국가들이 COP31 개막 회의에서 제안한 적응재원 3배 확대 별도 의제가 합의에 이르지 못했고, 무라트 쿠룸 COP31 의장은 이를 기존 의제 항목에서 다루도록 결정했다. EU는 별도 의제를 수용하지 않겠다는 입장을 보인 것으로 전해졌으며, UNEP 2026 적응격차보고서는 개도국 적응비용이 2035년까지 연 3,050억 달러에 달한다고 추산했다.",
+      "confidence_note": "발행일은 URL(20261112) 기준. allAfrica는 재배포 플랫폼이라 원 매체 및 출처국 미확인 → source_countries 빈칸. 아프리카 대륙 전반을 다뤄 좌표·관련국(아프리카 개별국) 미지정. 사이트 접속 불가로 본문 미열람, 검색 요약 기준."
+    },
+    {
+      "id": "2026-11-13-brevard-florida-historic-flooding",
+      "collected_at": "2026-11-13",
+      "published_date": "2026-11-03",
+      "type": "news",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "미 플로리다 브리바드 카운티 '100년 빈도' 폭우… 24시간 최대 600mm, 2명 사망·수백 명 구조",
+      "title_original": "Historic flooding puts Brevard County Election Day voting to the test",
+      "source": "ClickOrlando (WKMG News 6)",
+      "url": "https://www.clickorlando.com/news/local/2026/11/03/historic-flooding-puts-brevard-county-election-day-voting-to-the-test/",
+      "region": "미국 플로리다 브리바드 카운티",
+      "source_countries": [
+        "US"
+      ],
+      "related_countries": [
+        "US"
+      ],
+      "lat": 28.0,
+      "lon": -80.6,
+      "summary_ko": "11월 초 사흘간 이어진 극한 강우로 플로리다 브리바드 카운티 팜베이 일대에 일부 지역 23~24인치(약 600mm) 비가 내려 '100년 빈도' 홍수가 발생했고, 팜베이 시장은 홍수 관련 사망자 2명을 확인했다. 수백 건의 구조가 이뤄졌으며 선거일 투표소 6곳이 이전됐고, 주지사는 7개 카운티에 비상사태를 선포했다.",
+      "confidence_note": "발행일은 URL 기준(2026-11-03), 수집일 기준 10일 전 사건으로 최신 속보는 아님. 강우량·구조 건수는 매체별로 차이(구조 60여 건~160건)가 있으며 검색 요약 기준, 본문 미열람."
     }
   ]
 }
