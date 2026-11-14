@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-13T21:10:39+09:00",
+  "last_updated": "2026-11-14T21:08:02+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -610,6 +610,101 @@
       "lon": -80.6,
       "summary_ko": "11월 초 사흘간 이어진 극한 강우로 플로리다 브리바드 카운티 팜베이 일대에 일부 지역 23~24인치(약 600mm) 비가 내려 '100년 빈도' 홍수가 발생했고, 팜베이 시장은 홍수 관련 사망자 2명을 확인했다. 수백 건의 구조가 이뤄졌으며 선거일 투표소 6곳이 이전됐고, 주지사는 7개 카운티에 비상사태를 선포했다.",
       "confidence_note": "발행일은 URL 기준(2026-11-03), 수집일 기준 10일 전 사건으로 최신 속보는 아님. 강우량·구조 건수는 매체별로 차이(구조 60여 건~160건)가 있으며 검색 요약 기준, 본문 미열람."
+    },
+    {
+      "id": "2026-11-14-wmo-state-of-climate-update-cop31",
+      "collected_at": "2026-11-14",
+      "published_date": "2026-11-09",
+      "type": "data_update",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "WMO \"2026년, 관측 사상 가장 더운 4개 해 중 하나\"…1~9월 산업화 이전보다 1.47℃ 높아",
+      "title_original": "State of the Climate Update for COP31",
+      "source": "세계기상기구(WMO)",
+      "url": "https://wmo.int/resources/publication-series/state-of-climate-update-cop/state-of-climate-update-cop31",
+      "region": "글로벌",
+      "source_countries": [
+        "CH"
+      ],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "WMO가 COP31 개막일에 발표한 기후현황 업데이트에 따르면 2026년 1~9월 지구 평균기온은 1850~1900년 대비 약 1.47℃(±0.13℃) 높았다. 최근 12년이 모두 관측 사상 가장 더운 12개 해에 해당하며, 해수면과 해양 열함량도 최고치를 기록했다. 9월까지 자료로는 엘니뇨 영향이 충분히 반영되지 않아 연간 수치는 더 오를 수 있고, 최종 보고서는 2027년 3월 발간 예정이다.",
+      "confidence_note": "WMO 원문 페이지는 이 수집 환경에서 직접 열람하지 못했고, 웹 검색 결과 요약(WMO 다국어 보도자료·RMetS·Scimex 등)으로 수치를 확인했다. 발표일(2026-11-09)은 복수 매체 보도 기준."
+    },
+    {
+      "id": "2026-11-14-cat-warming-projections-cop31-2p7",
+      "collected_at": "2026-11-14",
+      "published_date": "2026-11-12",
+      "type": "paper",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "기후행동추적(CAT) \"현행 정책대로면 2100년 2.7℃\"…전년 2.6℃서 소폭 악화",
+      "title_original": "Warming Projections Global Update – November 2026",
+      "source": "Climate Action Tracker (Climate Analytics·NewClimate Institute)",
+      "url": "https://climateactiontracker.org/documents/1451/CAT_2026-11-12_GlobalUpdate_COP31.pdf",
+      "region": "글로벌",
+      "source_countries": [
+        "DE"
+      ],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "COP31 기간 공개된 CAT 연례 전망은 현행 정책 기준 2100년 온난화를 약 2.7℃(범위 2.2~3.4℃)로 추정해 지난해 2.6℃보다 소폭 높였다. 상향 요인은 새 정책보다는 과거 배출 자료 갱신과 정책 전망 보정 등 기술적 요인이 주된 것으로 설명됐다. 모든 서약과 넷제로 목표가 이행되는 가장 낙관적 시나리오에서도 1.5℃를 일시 초과(오버슛)하는 것으로 나타났다.",
+      "confidence_note": "PDF 원문은 직접 열람하지 못해 검색 결과·2차 보도(Irish Examiner, The Planet Brief 등)로 확인. 발표일은 파일명(2026-11-12) 기준. 목표 이행 시나리오 수치(2.1℃/2.6℃)는 보도마다 달라 수록하지 않았다. 출처국은 CAT 운영기관(Climate Analytics·NewClimate Institute) 소재지인 독일로 표기."
+    },
+    {
+      "id": "2026-11-14-aha-centre-weekly-disaster-2-8-nov",
+      "collected_at": "2026-11-14",
+      "published_date": null,
+      "type": "data_update",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "아세안 한 주에 재난 29건…AHA센터 \"가뭄·홍수·산사태·폭풍 잇따라\"",
+      "title_original": "Weekly Disaster Update 2 - 8 November 2026",
+      "source": "아세안 재난관리 인도적지원 조정센터(AHA Centre)",
+      "url": "https://ahacentre.org/weekly-disaster-update/weekly-disaster-update-2-8-november-2026/",
+      "region": "동남아시아",
+      "source_countries": [
+        "ID"
+      ],
+      "related_countries": [
+        "ID",
+        "TH"
+      ],
+      "lat": -2.5,
+      "lon": 118.0,
+      "summary_ko": "AHA센터 주간 재난 업데이트(2026년 45주차)에 따르면 11월 2~8일 아세안 지역에서 가뭄·홍수·산사태·폭풍·강풍 등 재난 29건이 보고됐다. 인도네시아 북수마트라에서는 11월 5일과 7일 홍수로 약 9,600명(2,400가구)이 피해를 입었고, 태국 재난당국은 누적 사망자 88명을 보고했다.",
+      "confidence_note": "원문 페이지 직접 열람 불가, 검색 결과 발췌로만 확인. 게시일 불명확(null). 태국 누적 사망자 88명의 집계 기간이 발췌에서 확인되지 않음. 좌표는 인도네시아 중심 근사값."
+    },
+    {
+      "id": "2026-11-14-cop31-nepal-himalayas-agenda-fails",
+      "collected_at": "2026-11-14",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "adaptation",
+        "climate_general"
+      ],
+      "title_ko": "COP31, 히말라야 의제 정식 채택 불발…네팔의 산악 적응 의제화 시도 좌절",
+      "title_original": "The Himalayas Have No Place On COP31's Formal Agenda, Why Nepal's Push Failed",
+      "source": "Outlook India",
+      "url": "https://www.outlookindia.com/international/cop31-nepal-himalayas-bhutan-agenda-push-fails",
+      "region": "네팔",
+      "source_countries": [
+        "IN"
+      ],
+      "related_countries": [
+        "NP",
+        "BT"
+      ],
+      "lat": 27.7,
+      "lon": 85.3,
+      "summary_ko": "네팔이 빙하 감소 등 히말라야 산악지역 기후 위기를 COP31 공식 의제로 올리려 했으나 채택되지 못했다고 Outlook India가 보도했다. 적응 세계목표(GGA) 지표와 적응재원 3배 확대 논의가 교착된 가운데, 산악국가들의 적응 의제가 협상 테이블 밖으로 밀려난 셈이다.",
+      "confidence_note": "검색 결과 제목·발췌로만 확인했으며 기사 게시일 불명확(null). 불발 사유 등 세부 내용은 원문 확인 필요. 관련국 부탄(BT)은 URL 표기 기준으로 포함. 좌표는 카트만두 근사값."
     }
   ]
 }
