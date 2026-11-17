@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16T21:10:11+09:00",
+  "last_updated": "2026-11-17T21:09:19+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -847,6 +847,125 @@
       "lon": 30.7,
       "summary_ko": "종교 기반 인도주의 연대체 ACT 얼라이언스가 COP31 중간 시점 성명을 내고 1주차 협상 진전이 지나치게 적다며 2주차에 합류하는 각국 장관들이 실질적 결과를 내야 한다고 촉구했다. 적응재원·정의로운 전환 등 주요 쟁점이 2주차로 넘어간 상황에서 시민사회의 압박이 커지고 있다.",
       "confidence_note": "검색 결과 제목만 확인(원문 접속 불가) — 성명의 구체적 요구사항은 미확인이며 요약은 제목과 협상 맥락에 근거. 게시일 불명(1주차 종료 시점인 11월 14~15일 전후 추정). 출처국은 ACT 얼라이언스 사무국 소재지(제네바) 기준."
+    },
+    {
+      "id": "2026-11-17-cop31-draft-120bn-adaptation-finance-2035",
+      "collected_at": "2026-11-17",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "adaptation",
+        "climate_general"
+      ],
+      "title_ko": "COP31 의장국 초안 \"2035년까지 적응재원 연 1,200억 달러\"…3배 확대 목표 수치화",
+      "title_original": "COP31 draft proposes $120bn adaptation finance target by 2035",
+      "source": "Dhaka Tribune",
+      "url": "https://www.dhakatribune.com/world/europe/424860/cop31-draft-proposes-120bn-adaptation-finance",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "BD"
+      ],
+      "related_countries": [
+        "TR"
+      ],
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary_ko": "11월 16일 공개된 COP31 의장국 초안 73항이 2035년까지 적응재원을 3배로 늘려 최소 연 1,200억 달러에 도달하도록 하는 안을 담았다고 보도됐다. 초안은 개도국 적응 수요를 2035년 연 약 3,050억 달러로, 2024년 국제 공공 적응재원을 280억~320억 달러로 추산했다. 아직 합의안이 아닌 제안 단계다.",
+      "confidence_note": "검색 결과 발췌로만 확인(원문 접속 불가). 기사 게시일 미확인(초안 공개일 11월 16일 기준 16~17일 추정). 같은 내용이 Yeni Şafak·EconoTimes 등에도 실림 — 원 보도 통신사 미확인. 수치는 초안 제안이며 선진국 동의 전(1,000억 달러안도 논의 중이라는 보도 있음). 좌표는 안탈리아 근사값."
+    },
+    {
+      "id": "2026-11-17-african-group-cop31-draft-distraction",
+      "collected_at": "2026-11-17",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "adaptation",
+        "climate_general"
+      ],
+      "title_ko": "아프리카 그룹 \"COP31 첫 초안, 기후재원 책임 흐리는 '주의 분산'\"",
+      "title_original": "African countries say 1st draft from COP31 conference risks 'distraction' from climate finance accountability",
+      "source": "Anadolu Agency",
+      "url": "https://aa.com.tr/en/turkiye/african-countries-say-1st-draft-from-cop31-conference-risks-distraction-from-climate-finance-accountability/4126797",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "TR"
+      ],
+      "related_countries": [
+        "TR"
+      ],
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary_ko": "아프리카 대표단 소식통은 COP31 첫 포괄 결정문 초안의 적응재원 문구가 이행 장치 없이 과거 약속을 되풀이할 위험이 있다며 기후재원 책임 논의에서 '주의를 분산'시킨다고 비판했다. 이 소식통은 선진국이 연 1,200억 달러 수치에 아직 동의하지 않았고 1,000억 달러안도 거론된다고 전했다.",
+      "confidence_note": "검색 결과 발췌로만 확인(원문 접속 불가). 게시일 미확인(초안 공개 직후인 11월 16~17일 추정). 익명 대표단 소식통 발언 — 아프리카 협상그룹(AGN) 공식 입장과 교차 확인 필요. 관련국은 개별 아프리카 국가가 특정되지 않아 개최국만 표기."
+    },
+    {
+      "id": "2026-11-17-turkiye-cop31-final-week-ambitious-outcome",
+      "collected_at": "2026-11-17",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "COP31 마지막 주 돌입…의장국 튀르키예 \"장관급 협상으로 강력한 결과 낼 것\"",
+      "title_original": "Türkiye eyes ambitious climate outcome as COP31 enters final week",
+      "source": "Hürriyet Daily News",
+      "url": "https://www.hurriyetdailynews.com/turkiye-eyes-ambitious-climate-outcome-as-cop31-enters-final-week-229417",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "TR"
+      ],
+      "related_countries": [
+        "TR"
+      ],
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary_ko": "COP31 의장인 무라트 쿠룸 튀르키예 환경장관은 2주차(11월 16~20일) 장관급 협상을 통해 안탈리아에서 강력한 결과를 내겠다고 밝혔다. 협상 의장 크리스 보웬은 이번 주 장관·수석대표급 초안 논의 일정을 예고했으며, 1주차에 실질 합의를 이루지 못해 기술기구가 장관들에게 넘길 선택지를 좁혀 둔 상태다.",
+      "confidence_note": "검색 결과 발췌로만 확인(원문 접속 불가). 게시일 미확인(2주차 시작 전후인 11월 15~16일 추정). 개최국 매체 보도로 의장국 시각이 반영됐을 수 있음. 좌표는 안탈리아 근사값."
+    },
+    {
+      "id": "2026-11-17-peru-el-nino-peak-season-rivers-surge",
+      "collected_at": "2026-11-17",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "페루 엘니뇨 '최성기' 진입…하천 범람 위기에 900만 명 홍수·산사태 위험",
+      "title_original": "Rivers Surge, Rains Top 150mm: Peru's El Niño Enters Peak Season With No Relief Until 2027",
+      "source": "inkl (원 매체 미확인)",
+      "url": "https://www.inkl.com/news/rivers-surge-rains-top-150mm-perus-el-nino-enters-peak-season-with-no-relief-until-2027",
+      "region": "페루",
+      "source_countries": [],
+      "related_countries": [
+        "PE"
+      ],
+      "lat": -9.2,
+      "lon": -75.0,
+      "summary_ko": "페루 엘니뇨연구위원회(ENFEN)가 11월 13일 '연안 엘니뇨' 경보를 유지하고 2027년 1월까지 북부 해안 폭우를 전망하면서 하천 수위가 급상승하고 있다. 정부는 11월 3일 전국 다수 구(district)에 60일 비상사태를 선포했으며, 인구 약 3분의 1인 900만여 명이 홍수·산사태 고위험군으로 분류됐다. 툼베스·피우라에선 이미 침수가 발생했다.",
+      "confidence_note": "검색 결과 발췌로만 확인(원문 접속 불가). 게시일 미확인(ENFEN 11월 13일 발표 언급으로 13일 이후 추정). inkl은 기사 재게재 플랫폼이라 원 매체·출처국 미확인 → source_countries 비움. 비상사태 대상 구 수가 보도마다 다름(MercoPress 1,380개 구, inkl 982개 구) — 개정 법령 여부 확인 필요. 좌표는 페루 국가 중심 근사값."
+    },
+    {
+      "id": "2026-11-17-iol-inside-2026-el-nino-heat-food-prices",
+      "collected_at": "2026-11-17",
+      "published_date": "2026-11-15",
+      "type": "news",
+      "topics": [
+        "climate_general",
+        "disaster"
+      ],
+      "title_ko": "'관측 사상 최강' 예상 2026 엘니뇨…극한기상이 지구 기온·장바구니 물가 끌어올린다",
+      "title_original": "Inside the 2026 El Niño: Why extreme weather is spiking global heat and grocery bills",
+      "source": "IOL (Independent Online)",
+      "url": "https://iol.co.za/news/world/2026-11-15-inside-the-2026-el-nio-why-extreme-weather-is-spiking-global-heat-and-grocery-bills/",
+      "region": "글로벌",
+      "source_countries": [
+        "ZA"
+      ],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "남아공 IOL이 2026년 엘니뇨가 관측 사상 가장 강력한 수준으로 12월께 정점을 찍을 것이란 전망과 함께, 극한 고온·홍수·가뭄이 2027년 이후까지 이어지며 전 세계 식량 가격을 밀어올릴 수 있다고 해설했다. 남미 홍수, 일부 지역의 이후 가뭄·산불 위험 등 지역별 파급을 짚었다.",
+      "confidence_note": "검색 결과 발췌로만 확인(원문 접속 불가). 게시일은 URL 경로(2026-11-15) 기준. '사상 최강'은 예보 전망이며 확정 관측치 아님 — NOAA·WMO 공식 ENSO 업데이트와 교차 확인 필요. 해설 기사라 구체 수치·출처 미확인."
     }
   ]
 }
