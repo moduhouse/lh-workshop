@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-17T21:09:19+09:00",
+  "last_updated": "2026-11-18T21:08:53+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -966,6 +966,130 @@
       "lon": null,
       "summary_ko": "남아공 IOL이 2026년 엘니뇨가 관측 사상 가장 강력한 수준으로 12월께 정점을 찍을 것이란 전망과 함께, 극한 고온·홍수·가뭄이 2027년 이후까지 이어지며 전 세계 식량 가격을 밀어올릴 수 있다고 해설했다. 남미 홍수, 일부 지역의 이후 가뭄·산불 위험 등 지역별 파급을 짚었다.",
       "confidence_note": "검색 결과 발췌로만 확인(원문 접속 불가). 게시일은 URL 경로(2026-11-15) 기준. '사상 최강'은 예보 전망이며 확정 관측치 아님 — NOAA·WMO 공식 ENSO 업데이트와 교차 확인 필요. 해설 기사라 구체 수치·출처 미확인."
+    },
+    {
+      "id": "2026-11-18-cop31-extreme-heat-cooling-roadmap",
+      "collected_at": "2026-11-18",
+      "published_date": "2026-11-17",
+      "type": "news",
+      "topics": [
+        "adaptation",
+        "climate_general"
+      ],
+      "title_ko": "COP31, 폭염 대응·지속가능 냉방 공동행동 지지…'안탈리아 코뮈니케'와 글로벌 로드맵 출범",
+      "title_original": "At COP31, governments back action on extreme heat and sustainable cooling",
+      "source": "UNEP (유엔환경계획)",
+      "url": "https://unep.org/en/news-and-stories/press-release/cop31-governments-back-action-extreme-heat-and-sustainable-cooling",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "KE"
+      ],
+      "related_countries": [
+        "TR",
+        "SG",
+        "BR",
+        "JP",
+        "GB"
+      ],
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary_ko": "COP31에서 각국이 극한 폭염과 냉방 수요에 대한 공동 대응을 지지하며 '안탈리아 코뮈니케'와 '글로벌 폭염 회복력·지속가능 냉방 로드맵'을 환영했다. 2천만 달러 이상의 신규 지원이 발표됐으며, 싱가포르·브라질·일본·영국 등이 로드맵 이행을 약속했다.",
+      "confidence_note": "웹 검색 결과 요약에 근거해 정리함(원문 페이지는 수집 환경의 네트워크 제한으로 직접 열람하지 못함). 발표일 11월 17일은 검색 요약 기준이며, 참여국 전체 목록과 지원액 세부 내역은 원문 확인 필요."
+    },
+    {
+      "id": "2026-11-18-malaysia-sukuk-prisma-adaptation",
+      "collected_at": "2026-11-18",
+      "published_date": "2026-11-18",
+      "type": "news",
+      "topics": [
+        "adaptation"
+      ],
+      "title_ko": "말레이시아, 기후 적응·회복력 투자 위한 이슬람 채권 'Sukuk PRISMA' 공개",
+      "title_original": "Malaysia unveils Sukuk financing scheme to mobilize global capital for climate adaptation and resilience",
+      "source": "TNGlobal (TechNode Global)",
+      "url": "https://technode.global/2026/11/18/malaysia-unveils-sukuk-financing-scheme-to-mobilize-global-capital-for-climate-adaptation-and-resilience/",
+      "region": "말레이시아 쿠알라룸푸르",
+      "source_countries": [
+        "SG"
+      ],
+      "related_countries": [
+        "MY"
+      ],
+      "lat": 3.14,
+      "lon": 101.69,
+      "summary_ko": "말레이시아 증권위원회(SC)가 지속가능 수쿠크(이슬람 채권) 프레임워크 'Sukuk PRISMA'를 내놓았다. 홍수 저감, 해안 보호, 농업, 전력망 회복력 등 적응 사업에 글로벌 자본을 끌어들이는 것이 목표다.",
+      "confidence_note": "웹 검색 결과 요약에 근거함(원문 직접 열람 불가). 발행 규모·인증 기준 등 세부 조건은 원문 및 말레이시아 증권위원회 발표 확인 필요. 출처국(SG)은 TNGlobal 본사 소재지 기준 추정."
+    },
+    {
+      "id": "2026-11-18-iucn-nbs-adaptation-framework-cop31",
+      "collected_at": "2026-11-18",
+      "published_date": "2026-11-16",
+      "type": "news",
+      "topics": [
+        "adaptation"
+      ],
+      "title_ko": "IUCN, COP31서 자연기반해법(NbS) 적응 확대 위한 6단계 운영 프레임워크 발표",
+      "title_original": "IUCN launches operational framework at COP31 with Global Affairs Canada support to scale nature-based solutions for climate adaptation",
+      "source": "fundsforNGOs News",
+      "url": "https://news.fundsforngos.org/2026/11/18/iucn-cop31-framework-scale-nature-based-solutions-climate-adaptation/",
+      "region": "글로벌",
+      "source_countries": [],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "세계자연보전연맹(IUCN)이 캐나다 글로벌어페어스(외교부)의 지원을 받아 자연기반해법을 기후 적응에 확대 적용하기 위한 운영 프레임워크를 COP31에서 공개했다. 초기 평가부터 모니터링까지 이어지는 6단계 경로를 제시한다.",
+      "confidence_note": "2차 매체(fundsforNGOs) 보도이며 검색 요약에 근거함(원문 직접 열람 불가). 발표일 11월 16일은 검색 요약 기준. 매체 소재국이 불확실해 source_countries는 비워 둠. IUCN 공식 발표 원문 확인 권장."
+    },
+    {
+      "id": "2026-11-18-cop31-ministers-divided-draft-cover-decision",
+      "collected_at": "2026-11-18",
+      "published_date": "2026-11-18",
+      "type": "news",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "COP31 폐막 이틀 앞두고 각료급 협상 돌입…화석연료·재원 놓고 '갈라진 초안'",
+      "title_original": "Antalya Climate Summit Faces a Divided Draft",
+      "source": "The Rio Times",
+      "url": "https://www.riotimesonline.com/cop31-ministers-take-up-divided-draft-cover-decision/",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "BR"
+      ],
+      "related_countries": [
+        "TR",
+        "SA",
+        "IN"
+      ],
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary_ko": "11월 16일 공개된 144개 단락 규모의 COP31 결정문 초안을 두고 각료급 협상이 시작됐지만, 아랍그룹·사우디아라비아·인도의 반대가 해소되지 않은 상태다. 화석연료 전환, 적응 재원, 기후과학 일정을 둘러싼 이견 속에 회의는 11월 20일 폐막 예정이며 결정은 만장일치가 필요하다.",
+      "confidence_note": "웹 검색 결과 요약에 근거함(원문 직접 열람 불가). 초안의 성격('cover decision' 여부)은 매체마다 표현이 달라 잠정적임. 최종 합의 내용은 폐막 후 UNFCCC 공식 문서로 확인 필요."
+    },
+    {
+      "id": "2026-11-18-kuala-lumpur-kepong-landslide",
+      "collected_at": "2026-11-18",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "쿠알라룸푸르 케퐁서 산사태…방글라데시 출신 노동자 1명 매몰 사망",
+      "title_original": "Bangladeshi worker killed in Kepong landslide",
+      "source": "New Straits Times",
+      "url": "https://nst.com.my/news/regional/2026/11/1579943/bangladeshi-worker-killed-kepong-landslide",
+      "region": "말레이시아 쿠알라룸푸르",
+      "source_countries": [
+        "MY"
+      ],
+      "related_countries": [
+        "MY",
+        "BD"
+      ],
+      "lat": 3.21,
+      "lon": 101.64,
+      "summary_ko": "말레이시아 쿠알라룸푸르 캄풍 믈라유 케퐁에서 산사태가 발생해 34세 방글라데시 출신 노동자가 수 톤의 토사에 매몰돼 숨졌다.",
+      "confidence_note": "URL상 2026년 11월 기사이나 정확한 게재일은 확인되지 않음(검색 결과상 약 11월 17일 추정). 원문 직접 열람 불가로 산사태 원인(강우 여부 등)은 미확인 — 기상재해 연관성은 원문 확인 필요."
     }
   ]
 }
