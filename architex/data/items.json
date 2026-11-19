@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-18T21:08:53+09:00",
+  "last_updated": "2026-11-19T21:10:00+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -1090,6 +1090,101 @@
       "lon": 101.64,
       "summary_ko": "말레이시아 쿠알라룸푸르 캄풍 믈라유 케퐁에서 산사태가 발생해 34세 방글라데시 출신 노동자가 수 톤의 토사에 매몰돼 숨졌다.",
       "confidence_note": "URL상 2026년 11월 기사이나 정확한 게재일은 확인되지 않음(검색 결과상 약 11월 17일 추정). 원문 직접 열람 불가로 산사태 원인(강우 여부 등)은 미확인 — 기상재해 연관성은 원문 확인 필요."
+    },
+    {
+      "id": "2026-11-19-cyclone-akvan-andhra-odisha",
+      "collected_at": "2026-11-19",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "‘매우 강한’ 사이클론 아크반, 20일 인도 안드라프라데시 상륙 전망…오디샤 등 동부 해안 비상",
+      "title_original": "Cyclone Akvan set for Andhra landfall as ‘very severe’ storm; Odisha, TN brace for rain",
+      "source": "The Federal",
+      "url": "https://thefederal.com/category/news/cyclone-akvan-bay-of-bengal-east-coast-rainfall-weather-forecast-imd-263072",
+      "region": "인도 안드라프라데시·오디샤",
+      "source_countries": [
+        "IN"
+      ],
+      "related_countries": [
+        "IN"
+      ],
+      "lat": 16.5,
+      "lon": 81.5,
+      "summary_ko": "인도기상청(IMD)은 벵골만의 사이클론 아크반(Akvan)이 ‘매우 강한 사이클론성 폭풍’으로 발달해 11월 20일 정오께 넬로르–투니 사이 안드라프라데시 해안에 상륙할 것으로 예보했다. 상륙 시 최대 풍속은 시속 120~130km(돌풍 145km)로 예상되며, 안드라프라데시와 오디샤 남부에 주황색 경보가 내려지고 취약 지역 주민 사전 대피가 시작됐다. 한 달도 안 돼 같은 해안을 위협하는 세 번째 사이클론(아르납·무라수에 이어)이다.",
+      "confidence_note": "웹 검색 결과 요약 기반이며 원문 직접 열람 불가(네트워크 제한). 게재일은 11월 16~17일 무렵으로 추정되나 미확인. 상륙 시점은 매체별로 19일/20일로 엇갈려 예보치임에 유의 — 실제 상륙·피해는 후속 확인 필요."
+    },
+    {
+      "id": "2026-11-19-aljazeera-cop31-draft-tensions",
+      "collected_at": "2026-11-19",
+      "published_date": "2026-11-17",
+      "type": "news",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "COP31 합의문 초안 놓고 긴장 고조…EU “대폭 수정 필요”, 아랍그룹·러시아는 거부",
+      "title_original": "Tensions rise over draft climate deal at COP31",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/17/tensions-rise-over-draft-climate-deal-at-cop31",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "QA"
+      ],
+      "related_countries": [
+        "TR",
+        "AU"
+      ],
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary_ko": "호주·튀르키예 의장단이 16일 공개한 18쪽 분량 ‘커버 결정문’ 초안에 화석연료 전환(전환/단계적 퇴출 두 가지 문안 병기)이 담기면서 협상장 긴장이 높아졌다. EU 기후특사 웁커 훅스트라는 “상당한 수정이 필요하다”고 했고, 아랍그룹·러시아는 초안을 거부했다. 크리스 보웬 협상 의장은 20일 폐막 전 최소 한 차례 수정 초안을 더 내겠다고 밝혔다.",
+      "confidence_note": "게재일은 URL 경로(2026/11/17) 기준. 원문 직접 열람 불가 — 각국 반응은 여러 매체 검색 결과를 종합한 것으로, 일부는 다른 매체(Arab News, Climate Home News) 보도 내용일 수 있음."
+    },
+    {
+      "id": "2026-11-19-spglobal-cop31-draft-electrification",
+      "collected_at": "2026-11-19",
+      "published_date": "2026-11-16",
+      "type": "news",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "COP31 초안 “2035년 최종에너지 35% 전기화”…화석연료·탄소제거도 핵심 쟁점으로",
+      "title_original": "COP31: Electrification, fossil fuels and carbon removal headline draft cover text",
+      "source": "S&P Global Commodity Insights",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/energy-transition/111626-cop31-electrification-fossil-fuels-and-carbon-removal-headline-draft-cover-text",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "US"
+      ],
+      "related_countries": [
+        "TR"
+      ],
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary_ko": "COP31 커버 결정문 초안(144개 항목)에는 2035년까지 전 세계 최종에너지의 35%를 전기로 충당한다는 목표가 포함됐다. 이는 개최국 튀르키예가 중점 추진해 온 의제로, 화석연료 전환 문안과 탄소제거 관련 내용도 함께 담겼다. 초안은 폐막(20일) 전 수정될 예정이다.",
+      "confidence_note": "게재일은 URL의 '111626'(11월 16일) 표기로 추정. 원문 직접 열람 불가 — 35% 전기화 목표·144개 항목 수치는 검색 결과 요약(복수 매체)에 근거하며 최종 문안에서 바뀔 수 있음."
+    },
+    {
+      "id": "2026-11-19-outlook-belem-adaptation-indicators",
+      "collected_at": "2026-11-19",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "adaptation"
+      ],
+      "title_ko": "COP31의 적응 과제: 벨렝 적응지표 59개와 적응재원 격차는 어디까지 왔나",
+      "title_original": "COP31 2026: 59 Belém Climate Adaptation Indicators, COP30 Deal And Global Finance Gap",
+      "source": "Outlook India",
+      "url": "https://www.outlookindia.com/international/cop31-2026-59-belem-climate-adaptation-indicators-cop30-global-goal-adaptation-finance-gap",
+      "region": "글로벌",
+      "source_countries": [
+        "IN"
+      ],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "COP30에서 채택된 전지구적 적응목표(GGA) 이행 측정용 ‘벨렝 적응지표’ 59개를 COP31에서 어떻게 다듬을지 짚은 해설 기사다. 지표는 국가 간 비교나 재원 접근 조건으로 쓰지 않는다는 원칙 아래 채택됐으나, 6월 본 회의에서 지표 태스크포스 운영 주체를 두고 이견이 이어졌고, 아프리카 그룹은 2년짜리 기술 태스크포스를 요구하고 있다.",
+      "confidence_note": "게재일 미확인(COP31 기간 해설 기사로 추정). 원문 직접 열람 불가 — 6월 본 회의·아프리카 그룹 입장 등은 같은 검색에서 나온 다른 자료(C2ES, 모 이브라힘 재단 등)와 함께 종합한 맥락이며, 11월 18일 기준 GGA 협상 결과는 확인되지 않음."
     }
   ]
 }
