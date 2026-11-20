@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-19T21:10:00+09:00",
+  "last_updated": "2026-11-20T21:10:00+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -1185,6 +1185,79 @@
       "lon": null,
       "summary_ko": "COP30에서 채택된 전지구적 적응목표(GGA) 이행 측정용 ‘벨렝 적응지표’ 59개를 COP31에서 어떻게 다듬을지 짚은 해설 기사다. 지표는 국가 간 비교나 재원 접근 조건으로 쓰지 않는다는 원칙 아래 채택됐으나, 6월 본 회의에서 지표 태스크포스 운영 주체를 두고 이견이 이어졌고, 아프리카 그룹은 2년짜리 기술 태스크포스를 요구하고 있다.",
       "confidence_note": "게재일 미확인(COP31 기간 해설 기사로 추정). 원문 직접 열람 불가 — 6월 본 회의·아프리카 그룹 입장 등은 같은 검색에서 나온 다른 자료(C2ES, 모 이브라힘 재단 등)와 함께 종합한 맥락이며, 11월 18일 기준 GGA 협상 결과는 확인되지 않음."
+    },
+    {
+      "id": "2026-11-20-ccn-cop31-bulletin-day11-final-day",
+      "collected_at": "2026-11-20",
+      "published_date": "2026-11-20",
+      "type": "news",
+      "topics": [
+        "climate_general",
+        "adaptation"
+      ],
+      "title_ko": "COP31 폐막일, 초안에서 '화석연료' 문구 삭제…적응재원 3배 기준선도 빠져 연장 협상 가능성",
+      "title_original": "COP31 Bulletin Day 11: Best COP, worst COP? Weary negotiators seek to strengthen outcome",
+      "source": "Climate Home News",
+      "url": "https://www.climatechangenews.com/2026/11/20/cop31-bulletin-day-11-best-cop-worst-cop-weary-negotiators-seek-to-strengthen-outcome/",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "GB"
+      ],
+      "related_countries": [
+        "TR"
+      ],
+      "lat": 36.8969,
+      "lon": 30.7133,
+      "summary_ko": "예정된 마지막 날(11월 20일)을 맞은 COP31에서 지친 협상단이 결과문 강화를 시도하고 있다. 첫 초안의 '에너지 시스템에서 화석연료로부터의 즉각적 전환' 문구는 목요일까지 모두 삭제됐고, 적응재원 3배 확대의 기준선도 최신 초안에서 빠져 주말 연장 협상 가능성이 거론된다. 의장국 튀르키예는 2035년까지 최종에너지 중 전력 비중 35% 자발적 서약을 추진 중이다.",
+      "confidence_note": "원문 직접 열람 불가(세션 네트워크 제한) — 제목·URL 날짜와 같은 검색에서 나온 AP 등 보도 요약을 종합. 최종 합의 여부는 수집 시점(11월 20일) 기준 미확정."
+    },
+    {
+      "id": "2026-11-20-aha-centre-weekly-disaster-9-15-nov",
+      "collected_at": "2026-11-20",
+      "published_date": null,
+      "type": "data_update",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "아세안 재난 주간보고(11월 9~15일): 태국 홍수 5개 주 지속, 누적 사망 89명",
+      "title_original": "WEEKLY DISASTER UPDATE 9 - 15 November 2026",
+      "source": "AHA Centre (아세안 재난관리 인도적지원 조정센터)",
+      "url": "https://ahacentre.org/weekly-disaster-update/weekly-disaster-update-9-15-november-2026/",
+      "region": "동남아시아(태국)",
+      "source_countries": [
+        "ID"
+      ],
+      "related_countries": [
+        "TH"
+      ],
+      "lat": 15.87,
+      "lon": 100.99,
+      "summary_ko": "AHA Centre 주간 재난보고에 따르면 11월 15일 기준 태국 5개 주에서 홍수가 이어져 약 4만 8,700가구(12만 1,400명)가 여전히 피해를 입고 있다. 태국 재난예방경감국(DDPM)이 집계한 누적 사망자는 89명이다.",
+      "confidence_note": "게재일 미확인(보고 기간 11월 9~15일 이후 발행 추정). 원문 직접 열람 불가 — 수치는 검색 결과 요약 기준이며, 같은 보고서의 다른 국가 재난 항목은 확인하지 못함. 지난주 보고(2~8일)는 이미 수록됨."
+    },
+    {
+      "id": "2026-11-20-singapore-pacific-resilience-facility-pledge",
+      "collected_at": "2026-11-20",
+      "published_date": "2026-11-18",
+      "type": "news",
+      "topics": [
+        "adaptation"
+      ],
+      "title_ko": "싱가포르, COP31에서 '태평양 회복력 기금(PRF)'에 50만 달러 출연 약속",
+      "title_original": "PACNEWS ONE, 18 NOVEMBER 2026",
+      "source": "Islands Business (PACNEWS)",
+      "url": "https://islandsbusiness.com/pacnews/pacnews-one-18-november-2026/",
+      "region": "태평양 도서국",
+      "source_countries": [
+        "FJ"
+      ],
+      "related_countries": [
+        "SG"
+      ],
+      "lat": -18.14,
+      "lon": 178.44,
+      "summary_ko": "그레이스 푸 싱가포르 장관이 COP31 국가성명에서 태평양 도서국 주도의 기후 회복력 기금인 '태평양 회복력 기금(Pacific Resilience Facility)'에 미화 50만 달러를 출연하겠다고 밝혔다. 국가 적응계획이 아닌 자발적 기여 성격이며, 같은 기간 시민사회는 선진국의 적응기금(Adaptation Fund) 출연 약속이 5,000만 달러 수준에 그쳤다고 비판했다.",
+      "confidence_note": "PACNEWS 일일 뉴스 묶음 페이지로, 개별 기사 원문은 직접 열람하지 못하고 검색 요약에 의존. 적응기금 5,000만 달러 수치는 같은 검색의 다른 PACNEWS 호에서 나온 시민사회 주장으로 미검증. 좌표는 PACNEWS 소재지(피지 수바) 근사값."
     }
   ]
 }
