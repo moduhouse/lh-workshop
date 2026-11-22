@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-21T21:08:14+09:00",
+  "last_updated": "2026-11-22T21:08:03+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -1256,6 +1256,81 @@
       "lon": null,
       "summary_ko": "영국 싱크탱크 ODI의 전문가 논평으로, 적응재원 논의를 적응 협상에서 재정 전담 협상 트랙으로 옮기는 것만으로는 전지구적 적응목표(GGA) 이행 방식의 근본적 불확실성을 해소하지 못한다고 지적했다. COP31은 본(Bonn) 회의에서 합의하지 못한 지점부터 GGA 논의를 다시 시작해야 하며, 교착을 되풀이하지 않을 정치적 균형점을 찾는 것이 핵심 과제라고 봤다. 현재 COP31 막판의 적응재원 공방을 이해하는 배경자료다.",
       "confidence_note": "COP31 개막 전 논평으로 '오늘의 신규 소식'이 아님. 게재일은 미확인 — 필자 프로필 페이지에 2026년 8월 5일 또는 8월 18일로 표기돼 엇갈림. 원문 사이트 접속 불가로 검색 결과 발췌만 참고했으며, 전체 논지와 수치는 확인하지 못함."
+    },
+    {
+      "id": "2026-11-22-cop31-talks-break-down-no-consensus",
+      "collected_at": "2026-11-22",
+      "published_date": "2026-11-22",
+      "type": "news",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "COP31 안탈리아 총회 결렬… 의장 \"합의 없어 결정문 채택 안 돼\", EU 등 최종안 거부",
+      "title_original": "COP31 climate talks break down as EU, others reject deal",
+      "source": "Rappler (Reuters 통신 기사 전재)",
+      "url": "https://www.rappler.com/world/global-affairs/cop31-outcomes-november-22-2026/",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "PH",
+        "GB"
+      ],
+      "related_countries": [
+        "TR"
+      ],
+      "lat": 36.8969,
+      "lon": 30.7133,
+      "summary_ko": "당초 11월 20일 폐막 예정이던 COP31이 주말까지 연장된 끝에, 무라트 쿠룸 의장(튀르키예)이 폐막 총회에서 \"이 문서에 대한 합의가 없음을 인정한다. 따라서 이 결정들은 채택되지 않았다\"고 밝혔다. 로이터는 유럽연합(EU) 등이 최종 합의안을 거부했다고 전했다. 최종안은 지구온난화가 1.5℃를 넘어설 경로에 있음을 처음 인정했지만 화석연료 언급이 빠져 비판을 받아왔다.",
+      "confidence_note": "원문 사이트 접속 불가로 검색 결과 발췌(Rappler·Al-Monitor 게재 로이터 기사)만 참고함. 같은 날 앞선 보도는 '합의 임박'이었으므로 이후 재협상·추가 채택 여부는 미확인. 출처국은 게재 매체(필리핀)와 통신사(로이터, 영국 본사) 기준."
+    },
+    {
+      "id": "2026-11-22-cop31-revised-cover-draft-drops-fossil-120bn",
+      "collected_at": "2026-11-22",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "adaptation",
+        "climate_general"
+      ],
+      "title_ko": "COP31 수정 결정문 초안, 화석연료 전환 문구 삭제·적응재원 '1,200억 달러' 수치도 빠져",
+      "title_original": "COP31: Cover decision draft drops fossil fuel phaseout language, retains '35 by 35' electrification target",
+      "source": "Down To Earth",
+      "url": "https://www.downtoearth.org.in/climate-change/cop31-cover-decision-draft-drops-fossil-fuel-phaseout-language-retains-35-by-35-electrification-target",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "IN"
+      ],
+      "related_countries": [
+        "TR",
+        "PA"
+      ],
+      "lat": 36.8969,
+      "lon": 30.7133,
+      "summary_ko": "COP31 수정 결정문 초안은 '2035년까지 최종에너지 중 전력 비중 35%' 목표는 유지했지만 화석연료 전환 문구를 삭제했고, 11월 16일 초안에 있던 '2035년까지 적응재원 연 1,200억 달러 이상(3배 증액)' 수치도 빠지고 기후재정 작업프로그램에서 이행 경로를 논의하는 방식으로 바뀌었다. 초안은 UNEP 적응격차보고서를 인용해 3배 증액도 개도국 적응 수요(2035년 연 약 3,050억 달러)의 29% 이하에 그친다고 적시했다. 파나마는 화석연료 생산·기후재정 등이 반영되지 않으면 합의를 거부하겠다고 경고했다.",
+      "confidence_note": "게재일 미확인(검색 결과상 폐막 직전인 11월 20~21일경 추정). 원문 미열람, 검색 결과 발췌 및 TBS News·Yeni Şafak 등 관련 보도 요약 기반. 이후 최종안은 폐막 총회에서 채택되지 않음(같은 날 수집 항목 참조)."
+    },
+    {
+      "id": "2026-11-22-cyclone-akvan-weakens-odisha-red-alert",
+      "collected_at": "2026-11-22",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "사이클론 '아크반' 고팔푸르 상륙 후 저기압으로 약화… 오디샤 북부 발라소르·마유르반지 호우 적색경보",
+      "title_original": "Cyclone Akvan weakens into low-pressure area, IMD issues Red Alert for heavy rainfall in Balasore & Mayurbhanj",
+      "source": "News On AIR (All India Radio)",
+      "url": "https://newsonair.gov.in/cyclone-akvan-weakens-into-low-pressure-area-imd-issues-red-alert-for-heavy-rainfall-in-balasore-mayurbhanj/",
+      "region": "인도 오디샤",
+      "source_countries": [
+        "IN"
+      ],
+      "related_countries": [
+        "IN"
+      ],
+      "lat": 19.32,
+      "lon": 84.86,
+      "summary_ko": "한 달 새 세 번째로 벵골만 동부 해안을 강타한 사이클론 아크반이 금요일(11월 20일) 오전 오디샤 남부 고팔푸르 인근에 최대풍속 시속 70~80km로 상륙한 뒤 저기압으로 약화됐다. 인도기상청(IMD)은 북부 발라소르·마유르반지에 호우 적색경보, 14개 지구에 주황색 경보를 냈다. 오디샤에서는 현재까지 큰 인명피해는 보고되지 않았으나 간잠·가자파티·푸리 등지의 벼·채소 작물 피해 조사가 시작됐다.",
+      "confidence_note": "게재일 미확인(상륙 이후인 11월 21일경 추정). 원문 미열람, 검색 결과 발췌만 참고. 작물 피해·전력 복구(TPSODL 약 106만 가구 복구) 내용은 Odisha Bytes 등 지역 매체 보도를 함께 요약한 것으로 예비 집계임. 좌표는 고팔푸르 근사값."
     }
   ]
 }
