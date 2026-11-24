@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-23T21:08:00+09:00",
+  "last_updated": "2026-11-24T21:08:46+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -1380,6 +1380,102 @@
       "lon": 30.7,
       "summary_ko": "포브스 기고자 귀네이 이을드즈는 의장국 튀르키예가 전력화·녹색 산업화를 앞세운 행동 의제로 COP31을 사실상 에너지 정상회의로 이끌었다고 분석했다. 화석연료 문구를 둘러싼 협상이 결렬된 상황에서, 전력화 목표의 실제 이행은 전력회사와 대출기관(금융권)의 투자 결정에 달려 있다는 주장이다.",
       "confidence_note": "기고(오피니언) 성격의 분석 기사로 보도 사실이 아닌 필자 견해 포함. 게재일은 URL 경로(2026/11/22) 기준. 원문 미열람, 검색 결과 제목·발췌만 참고해 요약 내용은 제목 취지 중심임."
+    },
+    {
+      "id": "2026-11-24-un-news-cop31-ends-without-pact",
+      "collected_at": "2026-11-24",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "COP31, 합의 없이 폐막… 구테흐스 \"과학에는 모호함이 없다\"",
+      "title_original": "COP31 ends without climate pact as UN chief warns there is ‘no ambiguity in the science’",
+      "source": "UN News",
+      "url": "https://news.un.org/en/story/2026/11/1168855",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "US"
+      ],
+      "related_countries": [
+        "TR"
+      ],
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary_ko": "튀르키예 안탈리아에서 열린 COP31이 화석연료 문구를 둘러싼 대립 끝에 총괄 결정문(cover decision) 합의 없이 폐막했다. 안토니우 구테흐스 유엔 사무총장은 합의 실패에 \"깊이 실망했다\"면서도 과학에는 모호함이 없다며 더 빠른 기후 행동을 촉구했다. EU·영국 등은 화석연료를 언급하지 않은 최종 초안을 거부했다.",
+      "confidence_note": "정확한 게재일은 검색 결과에서 확인되지 않아 null 처리(폐막일 11-22 전후로 추정). UN News 출처국은 뉴욕 본부 기준 US로 기재. 원문 미열람, 검색 결과 요약 기반."
+    },
+    {
+      "id": "2026-11-24-unep-ed-statement-closing-cop31",
+      "collected_at": "2026-11-24",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "adaptation",
+        "climate_general"
+      ],
+      "title_ko": "UNEP 사무총장 COP31 폐막 성명 \"적응 재원 속도 내야… 1.5℃ 초과 궤도\"",
+      "title_original": "UNEP Executive Director statement on closing of COP31",
+      "source": "UNEP",
+      "url": "https://www.unep.org/en/news-and-stories/statement/unep-executive-director-statement-closing-cop31",
+      "region": "글로벌",
+      "source_countries": [
+        "KE"
+      ],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "유엔환경계획(UNEP) 사무총장은 COP31 폐막 성명에서 기후 적응 재원 확대를 가속해야 한다고 강조했다. 성명은 이번 회의가 UNEP 자료상 1.5℃ 초과(오버슈트)가 확실해진 뒤 처음 열린 COP였다는 점을 짚었다.",
+      "confidence_note": "게재일 미확인(null). 별도 검색에서 해당 성명 본문이 색인되지 않아, 첫 검색 결과의 짧은 발췌만으로 요약함 — 원문 대조 필요. UNEP 본부 소재국(케냐 나이로비) 기준 출처국 KE."
+    },
+    {
+      "id": "2026-11-24-aiib-turkiye-1p6bn-climate-policy-financing",
+      "collected_at": "2026-11-24",
+      "published_date": "2026-11-12",
+      "type": "news",
+      "topics": [
+        "adaptation",
+        "climate_general"
+      ],
+      "title_ko": "AIIB, COP31 의장국 튀르키예와 사상 최대 16억 달러 기후정책 금융 계약… 81개 주 적응계획 지원",
+      "title_original": "AIIB signs record US$1.6 billion climate policy financing package with COP31 host Türkiye",
+      "source": "Eco-Business",
+      "url": "https://www.eco-business.com/news/aiib-signs-record-us16-billion-climate-policy-financing-package-with-cop31-host-turkiye/",
+      "region": "튀르키예",
+      "source_countries": [
+        "SG"
+      ],
+      "related_countries": [
+        "TR"
+      ],
+      "lat": 39.9,
+      "lon": 32.9,
+      "summary_ko": "아시아인프라투자은행(AIIB)이 COP31 기간 튀르키예와 8억 달러씩 두 건, 총 16억 달러 규모의 정책기반 기후금융 패키지에 서명했다. 튀르키예 기후법·2차 NDC 이행을 위한 예산 지원으로, 배출권거래제 운영·녹색금융과 함께 81개 주의 지방 적응계획 및 물·생태계·보건 분야 기후위험 관리 강화를 포함한다. 다만 AIIB는 튀르키예의 2030년까지 추가 기후투자 수요를 약 680억 달러로 추산해 이번 패키지는 일부에 그친다.",
+      "confidence_note": "서명일 2026-11-12(검색 결과 기준)로 최근 1~2일 소식은 아니나, 파키스탄 매체(11-24) 등 후속 보도가 이어져 수록. Eco-Business 소재국 싱가포르 기준 SG. 원문 미열람, 검색 결과 요약 기반."
+    },
+    {
+      "id": "2026-11-24-ecuador-los-rios-floods-quevedo-landslide",
+      "collected_at": "2026-11-24",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "에콰도르 로스리오스주 폭우… 바바오요 침수, 케베도 산사태로 10대 자매 사망",
+      "title_original": "Floods and Landslides Hit Ecuador's Los Ríos",
+      "source": "The Rio Times",
+      "url": "https://www.riotimesonline.com/los-rios-ecuador-floods-landslides-quevedo/",
+      "region": "에콰도르 로스리오스",
+      "source_countries": [
+        "BR"
+      ],
+      "related_countries": [
+        "EC"
+      ],
+      "lat": 1.0,
+      "lon": -79.5,
+      "summary_ko": "11월 22~23일 밤사이 내린 폭우로 에콰도르 로스리오스주 바바오요가 침수되고 몬탈보 도로가 통제됐으며, 케베도에서는 산사태로 14·15세 자매가 숨졌다. 11월 18일 국가위험관리청 보고 기준 이번 우기 전국 사망자는 16명으로 집계됐다. 엘니뇨 영향으로 에콰도르 해안 지역 홍수 피해가 이어지고 있다.",
+      "confidence_note": "게재일은 기사 내용(11월 22~23일 강우) 기준 11-23 전후로 추정되나 미확인이라 null 처리. 엘니뇨 연관성은 앞선 수집 항목(과야킬·밀라그로 홍수) 맥락에 근거. 리오타임스 소재국 BR은 매체 기반지(브라질) 기준. 공식 SNGR 발표로 사망자 수 재확인 필요."
     }
   ]
 }
