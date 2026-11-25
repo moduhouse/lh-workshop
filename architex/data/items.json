@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-24T21:08:46+09:00",
+  "last_updated": "2026-11-25T21:08:03+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -1476,6 +1476,105 @@
       "lon": -79.5,
       "summary_ko": "11월 22~23일 밤사이 내린 폭우로 에콰도르 로스리오스주 바바오요가 침수되고 몬탈보 도로가 통제됐으며, 케베도에서는 산사태로 14·15세 자매가 숨졌다. 11월 18일 국가위험관리청 보고 기준 이번 우기 전국 사망자는 16명으로 집계됐다. 엘니뇨 영향으로 에콰도르 해안 지역 홍수 피해가 이어지고 있다.",
       "confidence_note": "게재일은 기사 내용(11월 22~23일 강우) 기준 11-23 전후로 추정되나 미확인이라 null 처리. 엘니뇨 연관성은 앞선 수집 항목(과야킬·밀라그로 홍수) 맥락에 근거. 리오타임스 소재국 BR은 매체 기반지(브라질) 기준. 공식 SNGR 발표로 사망자 수 재확인 필요."
+    },
+    {
+      "id": "2026-11-25-carbonbrief-cop31-key-outcomes-antalya",
+      "collected_at": "2026-11-25",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "climate_general",
+        "adaptation"
+      ],
+      "title_ko": "카본브리프 총정리: COP31 '붕괴'는 아니지만… 화석연료·1.5℃ 문구 빠지고 재원 논의는 '추가 회의'로",
+      "title_original": "COP31: Key outcomes agreed at the UN climate talks in Antalya",
+      "source": "Carbon Brief",
+      "url": "https://www.carbonbrief.org/cop31-key-outcomes-agreed-at-the-un-climate-talks-in-antalya",
+      "region": "튀르키예 안탈리아",
+      "source_countries": [
+        "GB"
+      ],
+      "related_countries": [
+        "TR"
+      ],
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary_ko": "카본브리프가 안탈리아 COP31의 주요 합의 사항을 정리했다. 포괄적 '안탈리아 협정'은 채택되지 못했지만 적응·기후재원·탄소시장 등 일부 의제 결정은 채택돼 전문가들은 엄밀히 '협상 붕괴'는 아니라고 평가했다. 다만 재원 협상은 추가 회의 개최 결정 외에 성과가 거의 없었고, 1.5℃·화석연료 관련 문구가 빠져 2차 전지구적 이행점검(GST)의 정치적 방향이 불투명해졌다.",
+      "confidence_note": "게재일 미확인(폐막 11-22 직후 추정)이라 null. 원문 미열람(세션 네트워크 정책상 접속 불가), 웹 검색 결과 요약 기반."
+    },
+    {
+      "id": "2026-11-25-aha-centre-weekly-disaster-16-22-nov",
+      "collected_at": "2026-11-25",
+      "published_date": null,
+      "type": "data_update",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "아세안 주간 재난: 반다해 규모 7.2 지진… 인도네시아·태국 남부·말레이반도 폭우 홍수",
+      "title_original": "WEEKLY DISASTER UPDATE 16 - 22 November 2026",
+      "source": "AHA Centre",
+      "url": "https://ahacentre.org/weekly-disaster-update/weekly-disaster-update-16-22-november-2026/",
+      "region": "동남아시아",
+      "source_countries": [
+        "ID"
+      ],
+      "related_countries": [
+        "ID",
+        "TH",
+        "MY",
+        "TL"
+      ],
+      "lat": -6.0,
+      "lon": 128.0,
+      "summary_ko": "아세안 재난관리 인도적지원 조정센터(AHA Centre)의 11월 16~22일 주간 보고에 따르면 11월 21일 반다해에서 규모 7.2 지진이 발생해 말루쿠바랏다야·타님바르 제도와 동티모르 딜리에서 진동이 감지됐다. 같은 기간 인도네시아, 태국 남부, 말레이시아 반도부에서 폭우에 따른 홍수가 이어졌으며, 보고 시점 역내 활동 중인 열대저기압은 없었다.",
+      "confidence_note": "게재일 미확인(보고 기간 종료 11-22 이후)이라 null. 피해 인원 등 세부 수치는 원문 확인 필요. AHA Centre 소재지 자카르타 기준 ID. 좌표는 반다해 근사값. 원문 미열람(세션 네트워크 정책상 접속 불가), 웹 검색 결과 요약 기반."
+    },
+    {
+      "id": "2026-11-25-paho-hazards-brazil-rs-storms-peru-quake",
+      "collected_at": "2026-11-25",
+      "published_date": "2026-11-23",
+      "type": "data_update",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "PAHO 재해 모니터링: 브라질 6개 주 폭풍·우박, 히우그란지두술 5명 사망·1만9천여 명 이재민… 페루 후닌 규모 6.7 지진",
+      "title_original": "Natural Hazards Monitoring - 23 November 2026",
+      "source": "PAHO/WHO (범미보건기구)",
+      "url": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-23-november-2026",
+      "region": "브라질 히우그란지두술",
+      "source_countries": [
+        "US"
+      ],
+      "related_countries": [
+        "BR",
+        "PE"
+      ],
+      "lat": -30.0,
+      "lon": -51.2,
+      "summary_ko": "범미보건기구(PAHO)의 11월 23일 자연재해 모니터링에 따르면 브라질 6개 주에 폭풍·폭우·우박이 덮쳤고, 가장 큰 피해를 입은 히우그란지두술주에서 5명이 숨지고 약 1만 9,850명이 집을 떠났다. 앞서 11월 20일 페루 후닌에서는 규모 6.7 지진으로 1명이 숨지고 853명이 거처를 잃어 우아누코·후닌·파스코 일부 지역에 비상사태가 선포됐다.",
+      "confidence_note": "수치는 초기 집계로 변동 가능. PAHO 본부 워싱턴DC 기준 US. 좌표는 포르투알레그리 근사값. 원문 미열람(세션 네트워크 정책상 접속 불가), 웹 검색 결과 요약 기반."
+    },
+    {
+      "id": "2026-11-25-nrma-climate-smart-innovation-grants-2026",
+      "collected_at": "2026-11-25",
+      "published_date": "2026-11-23",
+      "type": "news",
+      "topics": [
+        "adaptation"
+      ],
+      "title_ko": "호주 NRMA 보험, 기후적응 스타트업 8곳에 50만 호주달러 지원… '재해 정보' 기술에 무게",
+      "title_original": "Insurers' resilience grants tilt toward hazard intelligence as NRMA names 2026 cohort",
+      "source": "Reinsurance Asia (reinasia.com)",
+      "url": "https://reinasia.com/insurers-resilience-grants-tilt-toward-hazard-intelligence-as-nrma-names-2026-cohort/",
+      "region": "호주",
+      "source_countries": [],
+      "related_countries": [
+        "AU"
+      ],
+      "lat": -33.9,
+      "lon": 151.2,
+      "summary_ko": "호주 NRMA 보험이 '기후스마트 혁신 보조금' 2차 공모에서 기후적응 관련 8개 기업에 총 50만 호주달러(약 33만 달러)를 지원한다고 11월 23일 발표했다. 매체는 이번 선정이 재해 위험 탐지·예측 등 '재해 정보(hazard intelligence)' 분야로 기울었다고 분석했다. 보험업계가 피해 보상을 넘어 사전 적응·회복력 투자로 역할을 넓히는 흐름을 보여준다.",
+      "confidence_note": "발표일 11-23은 검색 결과 기준. 매체 소재국 불명확해 source_countries는 []. 선정 기업 명단은 원문 확인 필요. 좌표는 시드니(NRMA 본사 소재) 근사값. 원문 미열람(세션 네트워크 정책상 접속 불가), 웹 검색 결과 요약 기반."
     }
   ]
 }
