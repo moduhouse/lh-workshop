@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-26T21:09:17+09:00",
+  "last_updated": "2026-11-27T21:08:21+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -1676,6 +1676,98 @@
       "lon": null,
       "summary_ko": "세계 최대 기후 시민사회 연대체인 기후행동네트워크(CAN)가 COP31 폐막 성명에서 선진국들이 대출 확대와 민간 재원 '레버리지'라는 공허한 약속, 탄소시장 수익을 공공 재원의 대체물로 내세웠다고 비판했다. 성명은 로드맵에서 '부채(debt)'라는 단어가 아예 삭제됐다고 지적하며 개도국 적응 재원이 실현되지 않았다고 경고했다.",
       "confidence_note": "게재일은 URL 경로 기준. 옹호단체 성명이므로 입장이 반영된 평가임에 유의. CAN 사무국 소재국을 확인하지 못해 source_countries는 []. 원문 미열람(세션 네트워크 정책상 접속 불가), 웹 검색 결과 요약 기반."
+    },
+    {
+      "id": "2026-11-27-abc27-thanksgiving-storm-aftermath-outages",
+      "collected_at": "2026-11-27",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "추수감사절 폭풍 지나간 美 동부… 정전 최대 약 100만 가구, 볼티모어 해일 침수·메이시스 퍼레이드 첫 연기",
+      "title_original": "Heavy rain, wind and floods hammer US on Thanksgiving; Many homes, businesses still without power",
+      "source": "ABC27 (WHTM)",
+      "url": "https://www.abc27.com/national/heavy-rain-wind-and-floods-hammer-us-on-thanksgiving-many-homes-businesses-still-without-power/",
+      "region": "미국 동부",
+      "source_countries": [
+        "US"
+      ],
+      "related_countries": [
+        "US"
+      ],
+      "lat": 39.3,
+      "lon": -76.6,
+      "summary_ko": "추수감사절 당일 미국 동부를 강타한 폭풍으로 펜실베이니아·뉴저지 등에서 최대 100만 가구 가까이 정전됐고, 이튿날 아침까지도 수십만 가구가 전력을 회복하지 못했다. 볼티모어 수변 지역은 폭풍 해일로 침수돼 도로가 통제됐고, 메릴랜드 몽고메리·프린스조지스 카운티 약 200만 명에게 절수 요청이 내려졌다. 메이시스 추수감사절 퍼레이드가 사상 처음으로 연기됐다.",
+      "confidence_note": "전날 수록한 WaPo 예보 기사(2026-11-26)의 후속 피해 보도. 게시일은 검색 결과에서 확인되지 않아 null(11-27 전후로 추정). 정전 규모는 매체·시점별로 70만~100만으로 차이(CNN 90만+, NBC 85만+). 좌표는 볼티모어 근사값. 원문 미열람, 웹 검색 결과 요약 기반."
+    },
+    {
+      "id": "2026-11-27-libya-wmo-early-warning-project-2027",
+      "collected_at": "2026-11-27",
+      "published_date": "2026-11-26",
+      "type": "news",
+      "topics": [
+        "adaptation",
+        "disaster"
+      ],
+      "title_ko": "데르나 참사 3년, 리비아 197만 달러 기후 조기경보 사업 2027년 착수… 중국 개발협력청 지원",
+      "title_original": "Libya to Launch $1.97m Climate Early Warning Project in 2027",
+      "source": "Libya Review",
+      "url": "https://libyareview.com/69975/libya-to-launch-1-97m-climate-early-warning-project-in-2027/",
+      "region": "리비아",
+      "source_countries": [],
+      "related_countries": [
+        "LY",
+        "CN"
+      ],
+      "lat": 32.9,
+      "lon": 13.2,
+      "summary_ko": "세계기상기구(WMO)에 따르면 리비아가 조기경보 체계와 기후 회복력 강화를 위한 국제 사업을 준비 중이며, 중국국제발전협력서(CIDCA)가 197만 달러를 지원한다. 사업은 2027년 시작될 예정이다. 2023년 데르나 홍수 참사 이후 취약하다고 지적돼 온 리비아의 기상·재난 경보 역량 보강 흐름으로 볼 수 있다.",
+      "confidence_note": "게시일 11-26은 검색 결과 기준. 'WMO 발표'를 인용한 2차 보도로 WMO 원문 미확인. 매체 소재국 불명확해 source_countries는 []. 데르나 홍수 맥락은 기자 해설. 좌표는 트리폴리 근사값. 원문 미열람, 웹 검색 결과 요약 기반."
+    },
+    {
+      "id": "2026-11-27-doe-grid-resilience-967m-noi",
+      "collected_at": "2026-11-27",
+      "published_date": "2026-11-25",
+      "type": "data_update",
+      "topics": [
+        "adaptation"
+      ],
+      "title_ko": "美 에너지부, 주·부족 대상 전력망 회복력 보조금 9억 6,710만 달러 공고 예고",
+      "title_original": "DOE plans $967.1 M resilience funding",
+      "source": "Transformer Magazine",
+      "url": "https://transformer-magazine.com/news/doe-plans-967-1-m-resilience-funding/",
+      "region": "미국",
+      "source_countries": [],
+      "related_countries": [
+        "US"
+      ],
+      "lat": 38.9,
+      "lon": -77.0,
+      "summary_ko": "미국 에너지부(DOE)가 11월 25일 '전력망 회복력 주·부족 포뮬러 보조금' 약 9억 6,710만 달러에 대한 사업 의향 공고(NOI)를 냈다. 극한기상 등으로 인한 정전 피해를 줄이기 위한 전력 인프라 보강 재원이다. 공고는 정보 제공용으로, 세부 조건은 바뀔 수 있다고 밝혔다.",
+      "confidence_note": "NOI 게시일 11-25는 검색 결과 기준. 업계 전문지 2차 보도(매체 소재국 불명확해 source_countries는 []); DOE 원문 공고 미확인. 기후적응 사업이라기보다 전력망 회복력 사업이므로 적응 분야와의 연관성은 해석에 주의. 좌표는 워싱턴DC 근사값. 원문 미열람, 웹 검색 결과 요약 기반."
+    },
+    {
+      "id": "2026-11-27-copernicus-daily-record-2p12c-nov20",
+      "collected_at": "2026-11-27",
+      "published_date": "2026-11-23",
+      "type": "news",
+      "topics": [
+        "climate_general"
+      ],
+      "title_ko": "11월 20일 지구 기온, 산업화 이전보다 2.12℃ 높아… 1940년 관측 이래 일일 최대 편차",
+      "title_original": "A Single Day 2.12°C Above Pre-Industrial: What the New Record Means",
+      "source": "Nature World News",
+      "url": "https://www.natureworldnews.com/articles/73986/20261123/single-day-212c-above-pre-industrial-what-new-record-means.htm",
+      "region": "글로벌",
+      "source_countries": [
+        "US"
+      ],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "코페르니쿠스 기후변화서비스(C3S) 잠정 자료에 따르면 2026년 11월 20일 전 지구 평균기온이 1850~1900년 산업화 이전 평균보다 2.12℃ 높아, 1940년 이후 기록 중 가장 큰 일일 편차를 보였다. 매체는 하루 기록이 파리협정 한계 초과를 뜻하지는 않지만 온난화된 기후의 단면이라고 설명했다.",
+      "confidence_note": "게시일은 URL 경로 기준. C3S 잠정치를 인용한 2차 보도로 C3S 원문 미확인 — 확정치는 달라질 수 있음. 매체 소재국(US)은 추정. 원문 미열람, 웹 검색 결과 요약 기반."
     }
   ]
 }
