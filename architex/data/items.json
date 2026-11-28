@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-27T21:08:21+09:00",
+  "last_updated": "2026-11-28T21:08:07+09:00",
   "items": [
     {
       "id": "2026-11-01-ipcc65-suspend",
@@ -1768,6 +1768,104 @@
       "lon": null,
       "summary_ko": "코페르니쿠스 기후변화서비스(C3S) 잠정 자료에 따르면 2026년 11월 20일 전 지구 평균기온이 1850~1900년 산업화 이전 평균보다 2.12℃ 높아, 1940년 이후 기록 중 가장 큰 일일 편차를 보였다. 매체는 하루 기록이 파리협정 한계 초과를 뜻하지는 않지만 온난화된 기후의 단면이라고 설명했다.",
       "confidence_note": "게시일은 URL 경로 기준. C3S 잠정치를 인용한 2차 보도로 C3S 원문 미확인 — 확정치는 달라질 수 있음. 매체 소재국(US)은 추정. 원문 미열람, 웹 검색 결과 요약 기반."
+    },
+    {
+      "id": "2026-11-28-aljazeera-el-nino-floods-peru-ecuador",
+      "collected_at": "2026-11-28",
+      "published_date": "2026-11-28",
+      "type": "news",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "엘니뇨發 폭우, 페루·에콰도르 도시 잇따라 침수… 에콰도르 사망 34명",
+      "title_original": "El Nino-linked deluges flood cities in Peru, Ecuador",
+      "source": "Al Jazeera",
+      "url": "https://aljazeera.com/news/2026/11/28/el-nino-linked-deluges-flood-cities-in-peru-ecuador",
+      "region": "페루·에콰도르",
+      "source_countries": [
+        "QA"
+      ],
+      "related_countries": [
+        "PE",
+        "EC"
+      ],
+      "lat": -4.0,
+      "lon": -80.0,
+      "summary_ko": "이례적으로 강한 엘니뇨와 연관된 폭우로 페루 피우라와 에콰도르 곳곳의 도시가 침수됐다. 보도에 따르면 페루 피우라에서 약 2,000가구, 에콰도르에서 약 4만 7,000명이 피해를 입었고 에콰도르에서는 34명이 숨진 것으로 집계됐다.",
+      "confidence_note": "게시일은 URL 경로 기준. 원문 미열람(접속 불가), 웹 검색 결과 요약 기반 — 피해 수치는 집계 시점에 따라 달라질 수 있음. 기존 수록된 에콰도르 홍수 기사(11-16, 11-24)와 같은 엘니뇨 우기 사건의 후속 보도."
+    },
+    {
+      "id": "2026-11-28-central-vietnam-hue-landslides-highways",
+      "collected_at": "2026-11-28",
+      "published_date": "2026-11-26",
+      "type": "news",
+      "topics": [
+        "disaster"
+      ],
+      "title_ko": "베트남 중부 산사태로 주요 국도 차단… 후에 강 수위 홍수경보 1단계 넘어",
+      "title_original": "Landslides Block Key Highways in Central Vietnam as Rivers in Hue Rise Past Flood Warning Level 1",
+      "source": "Nature World News",
+      "url": "https://www.natureworldnews.com/articles/74089/20261126/landslides-block-key-highways-central-vietnam-rivers-hue-rise-past-flood-warning-level-1.htm",
+      "region": "베트남 후에",
+      "source_countries": [
+        "US"
+      ],
+      "related_countries": [
+        "VN"
+      ],
+      "lat": 16.46,
+      "lon": 107.59,
+      "summary_ko": "베트남 중부에 폭우가 이어지면서 후에(Huế) 지역 하천 수위가 홍수경보 1단계를 넘어섰고, 11월 25일 오후 아르어이(A Lưới) 5사의 국도 49호선이 산사태로 막히는 등 주요 도로가 차단됐다. 검색 시점 기준 인명 피해는 보고되지 않았다.",
+      "confidence_note": "게시일은 URL 경로 기준. 원문 미열람(접속 불가), 웹 검색 결과 요약 기반. 베트남 당국 원자료 미확인. 매체 소재국(US)은 추정."
+    },
+    {
+      "id": "2026-11-28-adaptation-fund-paris-transition-cop31",
+      "collected_at": "2026-11-28",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "adaptation",
+        "climate_general"
+      ],
+      "title_ko": "COP31, 적응기금 '파리협정 전속' 전환 완료… 탄소시장 수익 길 열려",
+      "title_original": "COP31 Completes Adaptation Fund's Transition to Serve the Paris Agreement Exclusively, Unlocking New Carbon Market Revenue",
+      "source": "Adaptation Fund",
+      "url": "https://www.adaptation-fund.org/cop31-completes-adaptation-funds-transition-to-serve-the-paris-agreement-exclusively-unlocking-new-carbon-market-revenue/",
+      "region": "글로벌",
+      "source_countries": [
+        "US"
+      ],
+      "related_countries": [],
+      "lat": null,
+      "lon": null,
+      "summary_ko": "COP31 당사국들이 적응기금(Adaptation Fund)을 파리협정에만 복무하도록 하는 전환을 마무리하기로 합의해, 파리협정 제6.4조 탄소크레딧 수익 배분분(5%)이 기금으로 들어올 길이 열렸다. 기금은 이 수익을 취약 개도국의 무상(grant) 적응 사업에 쓸 계획이며, 현재 개발 중인 사업 파이프라인은 24억 달러 규모라고 밝혔다.",
+      "confidence_note": "발표일 불명(COP31 막바지인 11월 22~23일경으로 추정). 기금 측 보도자료로 이해당사자 자료임. 2026년 6월 본 회의 교착 관련 보도와 대조했으나 COP31 결정문 원문은 미확인. 출처국은 기금 사무국 소재지(미국 워싱턴DC) 기준. 원문 미열람, 웹 검색 결과 요약 기반."
+    },
+    {
+      "id": "2026-11-28-canada-dabrusin-wraps-cop31-climate-finance",
+      "collected_at": "2026-11-28",
+      "published_date": null,
+      "type": "news",
+      "topics": [
+        "adaptation",
+        "climate_general"
+      ],
+      "title_ko": "캐나다 환경장관, COP31 결산… 1억1,600만 캐나다달러 기후재원·메탄 혁신 이니셔티브·해양 리더십 발표",
+      "title_original": "Minister Dabrusin wraps up COP31 with new climate finance, a methane innovation launch, and a leadership role on oceans",
+      "source": "캐나다 환경기후변화부(ECCC)",
+      "url": "https://www.canada.ca/en/environment-climate-change/news/2026/11/minister-dabrusin-wraps-up-cop31-with-new-climate-finance-a-methane-innovation-launch-and-a-leadership-role-on-oceans.html",
+      "region": "캐나다",
+      "source_countries": [
+        "CA"
+      ],
+      "related_countries": [
+        "CA",
+        "TR"
+      ],
+      "lat": 45.42,
+      "lon": -75.7,
+      "summary_ko": "캐나다 정부가 COP31 참가 성과를 정리하며 신규 국제 기후재원, 메탄 감축 혁신 이니셔티브 출범, 해양 분야 리더십 역할을 발표했다. 앞서 공개된 1억1,600만 캐나다달러 패키지는 5년간 130억 달러 지원 목표의 첫 집행분으로, 기후위험·조기경보시스템(CREWS) 최대 1,000만, 국가적응계획(NAP) 글로벌 네트워크 최대 1,200만 캐나다달러 등이 포함된다.",
+      "confidence_note": "게시일 불명(URL 경로상 2026년 11월, COP31 폐막 전후로 추정). 1억1,600만 달러 세부 내역은 11월 13~16일 관련 보도 기반이며 결산 보도자료 원문은 미열람 — 메탄·해양 관련 세부 내용 미확인. 웹 검색 결과 요약 기반."
     }
   ]
 }
